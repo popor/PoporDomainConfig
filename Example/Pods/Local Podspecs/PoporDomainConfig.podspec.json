@@ -1,0 +1,51 @@
+{
+  "name": "PoporDomainConfig",
+  "version": "0.1.0",
+  "summary": "A short description of PoporDomainConfig.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/popor/PoporDomainConfig",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "popor": "908891024@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/popor/PoporDomainConfig.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PoporDomainConfig/Classes/**/*",
+  "dependencies": {
+    "YYModel": [
+
+    ],
+    "YYCache": [
+
+    ],
+    "Masonry": [
+
+    ],
+    "ReactiveObjC": [
+
+    ],
+    "PoporFoundation/PrefixCore": [
+
+    ],
+    "PoporUI/UIImage": [
+
+    ],
+    "PoporUI/UITextField": [
+
+    ],
+    "PoporUI/UIViewController": [
+
+    ],
+    "PoporUI/UINavigationController": [
+
+    ]
+  }
+}

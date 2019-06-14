@@ -1,0 +1,6 @@
+framework module PoporDomainConfig {
+  umbrella header "PoporDomainConfig-umbrella.h"
+
+  export *
+  module * { export * }
+}
