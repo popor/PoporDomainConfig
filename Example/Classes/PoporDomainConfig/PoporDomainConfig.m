@@ -92,8 +92,10 @@ static NSString * SaveKey = @"config";
                 break;
             }
         }
-        [self updateLeTitleW];
-        [self updateDomain];
+        if (isNeedUpdate) {
+            [self updateLeTitleW];
+            [self updateDomain];
+        }
     }
 
 }
