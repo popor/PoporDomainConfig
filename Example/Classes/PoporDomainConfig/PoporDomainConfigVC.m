@@ -23,7 +23,6 @@
 @end
 
 @implementation PoporDomainConfigVC
-@synthesize segmenteControl;
 @synthesize defaultUrlTF;
 @synthesize saveBT;
 @synthesize infoTV;
@@ -46,12 +45,6 @@
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     [self stopMonitorTapEdit];
-    
-    if (self.segmenteControl) {
-        self.segmenteControl.hidden = YES;
-        [self.segmenteControl removeFromSuperview];
-        self.segmenteControl = nil;
-    }
 }
 
 - (void)viewDidLoad {
@@ -94,20 +87,6 @@
         [titleArray addObject:le.title];
     }
 
-    self.segmenteControl = ({
-        UISegmentedControl * sc = [[UISegmentedControl alloc] initWithItems:titleArray];
-        sc.tintColor = self.view.tintColor;
-        //sc.tintColor = [UIColor redColor];
-        
-        sc.selectedSegmentIndex = 0;
-        [sc addTarget:self.present action:@selector(selectSegmentedItem:) forControlEvents:UIControlEventValueChanged];
-        //[self.navigationController.navigationBar addSubview:sc];
-        
-        sc.center = CGPointMake(self.view.frame.size.width*0.5, self.navigationController.navigationBar.frame.size.height*0.5);
-        
-        sc;
-    });
-    
     if (!self.defaultUrlTF) {
         UIInsetsTextField * tf = [[UIInsetsTextField alloc] initWithFrame:CGRectZero insets:UIEdgeInsetsMake(0, 5, 0, 5)];
         tf.backgroundColor = [UIColor whiteColor];
@@ -126,12 +105,11 @@
         self.defaultUrlTF = tf;
     }
     
-    
     self.saveBT = ({
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame =  CGRectMake(100, 100, 80, 44);
         button.titleLabel.font = [UIFont systemFontOfSize:16];
-        [button setTitle:@"保存" forState:UIControlStateNormal];
+        [button setTitle:@"新增" forState:UIControlStateNormal];
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [button setBackgroundImage:[UIImage imageFromColor:self.view.tintColor size:CGSizeMake(1, 1)] forState:UIControlStateNormal];
         
@@ -155,7 +133,7 @@
         
         [self.view addSubview:l];
         
-        l.text = @"域名修改只对debug版本APP有效";
+        l.text = pdConfig.defaultInfo;
         
         [l setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
         l.numberOfLines =0;
@@ -164,15 +142,15 @@
     });
     
     [self.defaultUrlTF mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(20);
+        make.left.mas_equalTo(PoporDomainConfigVCXGap);
         make.top.mas_equalTo(self.infoCV.mas_bottom).mas_offset(20);
-        make.right.mas_equalTo(-20);
+        make.right.mas_equalTo(-PoporDomainConfigVCXGap);
         make.height.mas_equalTo(44);
     }];
     [self.saveBT mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(20);
+        make.left.mas_equalTo(PoporDomainConfigVCXGap);
         make.top.mas_equalTo(self.defaultUrlTF.mas_bottom).mas_offset(20);
-        make.right.mas_equalTo(-20);
+        make.right.mas_equalTo(-PoporDomainConfigVCXGap);
         make.height.mas_equalTo(44);
     }];
     
@@ -244,18 +222,21 @@
     //1.初始化layout
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     //设置collectionView滚动方向
-    [layout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    //[layout setScrollDirection:UICollectionViewScrollDirectionVertical];
     //设置headerView的尺寸大小
-    layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 20);
+    //layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 20);
     //该方法也可以设置itemSize
     //layout.itemSize =CGSizeMake(110, 150);
     
     //2.初始化collectionView
     UICollectionView * cv = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
     //cv.backgroundColor = ColorTV_DefaultBG;
+    cv.layer.cornerRadius = 6;
+    
     
     [self.view addSubview:cv];
-    //cv.backgroundColor = [UIColor clearColor];
+    cv.backgroundColor = [UIColor whiteColor];
     
     //3.注册collectionViewCell
     //注意，此处的ReuseIdentifier 必须和 cellForItemAtIndexPath 方法中 一致 均为 cellId
@@ -268,11 +249,17 @@
     int top = [self.navigationController getTopMargin];
     
     [cv mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(10);
+        make.left.mas_equalTo(PoporDomainConfigVCXGap);
         make.top.mas_equalTo(top+10);
         
-        make.right.mas_equalTo(-10);
-        make.height.mas_equalTo(PoporDomainConfigCCHeight);
+        make.right.mas_equalTo(-PoporDomainConfigVCXGap);
+        
+        PoporDomainConfig * pdConfig = [PoporDomainConfig share];
+        if (pdConfig.netArray.count <= 1) {
+            make.height.mas_equalTo(0);
+        }else{
+            make.height.mas_equalTo(PoporDomainConfigCCHeight);
+        }
     }];
     
     return cv;

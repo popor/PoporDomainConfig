@@ -10,4 +10,6 @@
 // 处理Entity事件
 @interface PoporDomainConfigVCInteractor : NSObject
 
+@property (nonatomic        ) NSInteger cvSelectIndex;
+
 @end

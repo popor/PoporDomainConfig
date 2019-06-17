@@ -10,6 +10,13 @@
 #endif
 #endif
 
+#import "PoporDomainConfig.h"
+#import "PoporDomainConfigCC.h"
+#import "PoporDomainConfigEntity.h"
+#import "PoporDomainConfigVC.h"
+#import "PoporDomainConfigVCInteractor.h"
+#import "PoporDomainConfigVCPresenter.h"
+#import "PoporDomainConfigVCProtocol.h"
 
 FOUNDATION_EXPORT double PoporDomainConfigVersionNumber;
 FOUNDATION_EXPORT const unsigned char PoporDomainConfigVersionString[];

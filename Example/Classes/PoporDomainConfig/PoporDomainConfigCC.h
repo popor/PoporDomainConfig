@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 static NSString * PoporDomainConfigCCKey = @"PoporDomainConfigCC";
-static int PoporDomainConfigCCHeight = 40;
+static int PoporDomainConfigCCHeight = 44;
+#define PoporDomainConfigCCFont [UIFont systemFontOfSize:16]
 
 @interface PoporDomainConfigCC : UICollectionViewCell
 

@@ -25,17 +25,10 @@
 - (void)addViews {
     self.titleL = ({
         UILabel * l = [UILabel new];
-        //l.frame              = CGRectMake(0, 0, 0, 44);
-        l.backgroundColor    = [UIColor clearColor];
-        l.font               = [UIFont systemFontOfSize:15];
-        l.textColor          = [UIColor darkGrayColor];
-        
-        l.numberOfLines      = 1;
-        
-        l.layer.cornerRadius = 5;
-        l.layer.borderColor  = [UIColor lightGrayColor].CGColor;
-        l.layer.borderWidth  = 1;
-        l.clipsToBounds      = YES;
+        l.backgroundColor = [UIColor clearColor];
+        l.font            = PoporDomainConfigCCFont;
+        l.textColor       = [UIColor darkGrayColor];
+        l.textAlignment   = NSTextAlignmentCenter;
         
         [self addSubview:l];
         l;
@@ -49,13 +42,22 @@
         make.height.mas_equalTo(self.titleL.font.pointSize + 3);
     }];
     
-    self.backgroundColor = [UIColor redColor];
+     self.backgroundColor = [UIColor lightGrayColor];
+}
+
+- (void)setSelected:(BOOL)selected {
+    [super setSelected:selected];
+    if (selected) {
+        self.titleL.textColor = [UIColor whiteColor];
+    }else{
+        self.titleL.textColor = [UIColor darkGrayColor];
+    }
 }
 
 + (int)cellW:(NSString *)str {
     static UIFont * font;
     if (!font) {
-        font = [UIFont systemFontOfSize:15];
+        font = PoporDomainConfigCCFont;
     }
     CGSize size = [str sizeInFont:font];
     return size.width + 14;

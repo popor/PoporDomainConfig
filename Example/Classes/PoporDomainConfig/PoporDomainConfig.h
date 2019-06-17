@@ -18,10 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 一般推荐使用该数组
 @property (nonatomic, strong) NSMutableArray<PoporDomainConfigListEntity *> * netArray;
+@property (nonatomic, strong) NSString * defaultInfo;
 
 + (instancetype)share;
-//- (NSString *)domain
-+ (void)setNetDefaultArray:(NSMutableArray<PoporDomainConfigListEntity *> *)array;
+
+// 假如数组个数 <= 1,将隐藏infoCV.
++ (void)setNetDefaultArray:(NSMutableArray<PoporDomainConfigListEntity *> *)array defaultInfo:(NSString * _Nullable)info;
 
 + (void)updateDomain;
 

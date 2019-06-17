@@ -1,8 +1,7 @@
 {
   "name": "PoporDomainConfig",
-  "version": "0.1.0",
-  "summary": "A short description of PoporDomainConfig.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.0.01",
+  "summary": "简易的域名配置工具,方便开发测试.",
   "homepage": "https://github.com/popor/PoporDomainConfig",
   "license": {
     "type": "MIT",
@@ -13,12 +12,12 @@
   },
   "source": {
     "git": "https://github.com/popor/PoporDomainConfig.git",
-    "tag": "0.1.0"
+    "tag": "0.0.01"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "PoporDomainConfig/Classes/**/*",
+  "source_files": "Example/Classes/PoporDomainConfig/*.{h,m}",
   "dependencies": {
     "YYModel": [
 

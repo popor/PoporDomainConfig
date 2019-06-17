@@ -29,14 +29,18 @@
         array.add([self getBingEntity]);
         array.add([self getGoogleEntity]);
         
-        array.add([self getGoogleEntity]);
-        array.add([self getGoogleEntity]);
-        array.add([self getGoogleEntity]);
+        //        array.add([self getGoogleEntity]);
+        //        array.add([self getGoogleEntity]);
+        //        array.add([self getGoogleEntity]);
+        //        array.add([self getGoogleEntity]);
+        //        array.add([self getGoogleEntity]);
+        //        array.add([self getGoogleEntity]);
+        //        array.add([self getGoogleEntity]);
         
-        [PoporDomainConfig setNetDefaultArray:array];
+        [PoporDomainConfig setNetDefaultArray:array defaultInfo:nil];
     }
     {
-        UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@"Net" style:UIBarButtonItemStylePlain target:self action:@selector(action1)];
+        UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@"域名配置" style:UIBarButtonItemStylePlain target:self action:@selector(action1)];
         self.navigationItem.rightBarButtonItems = @[item1];
     }
 }
@@ -46,6 +50,7 @@
     entity.key    = @"baidu";
     entity.title  = @"百度";
     entity.domain = @"https://www.baidu.com/dev";
+    entity.selectIndex = 0;
     
     entity.array
     .add(PoporDCE(@"开发", @"https://www.baidu.com/dev"))
@@ -60,6 +65,7 @@
     entity.key    = @"bing";
     entity.title  = @"必应";
     entity.domain = @"https://cn.bing.com/dev";
+    entity.selectIndex = 0;
     
     entity.array
     .add(PoporDCE(@"开发", @"https://cn.bing.com/dev"))
@@ -74,6 +80,7 @@
     entity.key    = @"google";
     entity.title  = @"谷歌";
     entity.domain = @"https://www.google.com/dev";
+    entity.selectIndex = 0;
     
     entity.array
     .add(PoporDCE(@"开发", @"https://www.google.com/dev"))

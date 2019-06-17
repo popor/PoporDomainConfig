@@ -24,7 +24,7 @@
 
 - (id)init {
     if (self = [super init]) {
-        _array = [NSMutableArray<PoporDomainConfigEntity *> new];
+        _array = [NSMutableArray<PoporDomainConfigEntity> new];
     }
     return self;
 }

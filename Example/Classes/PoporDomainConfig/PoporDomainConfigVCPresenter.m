@@ -54,7 +54,11 @@
 
 #pragma mark - VC_DataSource
 - (PoporDomainConfigListEntity *)listEntity {
-    return self.domainConfig.netArray[self.view.segmenteControl.selectedSegmentIndex];
+    if (self.interactor.cvSelectIndex < 0) {
+        return self.domainConfig.netArray.firstObject;
+    }else{
+        return self.domainConfig.netArray[self.interactor.cvSelectIndex];
+    }
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -68,29 +72,47 @@
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PoporDomainConfigCC *cell = [collectionView dequeueReusableCellWithReuseIdentifier:PoporDomainConfigCCKey forIndexPath:indexPath];
-    cell.titleL.text = self.listEntity.title;
-    
+    PoporDomainConfigListEntity * le = self.domainConfig.netArray[indexPath.row];
+    cell.titleL.text = le.title;
+    if (self.interactor.cvSelectIndex == -1) {
+        if (indexPath.row == 0) {
+            cell.selected = YES;
+            self.interactor.cvSelectIndex = 0;
+            [self selectCvIndex:self.interactor.cvSelectIndex];
+        }
+    }
     return cell;
 }
 
 #pragma layout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    return CGSizeMake(self.listEntity.titleW, PoporDomainConfigCCHeight);
+    PoporDomainConfigListEntity * le = self.domainConfig.netArray[indexPath.row];
+    return CGSizeMake(le.titleW, PoporDomainConfigCCHeight);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(0, 10, 0, 10);
+    return UIEdgeInsetsMake(0, 1, 0, 1);
 }
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    return 1;
+    return PoporDomainConfigCvXyGap;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-    return 1;
+    return PoporDomainConfigCvXyGap;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.row != self.interactor.cvSelectIndex) {
+        
+        PoporDomainConfigCC *cell = (PoporDomainConfigCC *)[collectionView cellForItemAtIndexPath:indexPath];
+        [cell setSelected:YES];
+        cell = (PoporDomainConfigCC *)[collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.interactor.cvSelectIndex inSection:0]];
+        [cell setSelected:NO];
+        self.interactor.cvSelectIndex = indexPath.row;
+        
+        [self selectCvIndex:self.interactor.cvSelectIndex];
+    }
     
 }
 
@@ -115,7 +137,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 10;
+    return 20;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -143,6 +165,12 @@
         cell.textLabel.text = entity.domain;
     }
     
+    if (self.listEntity.selectIndex == indexPath.row) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }else{
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
     return cell;
 }
 
@@ -156,6 +184,11 @@
             
             @strongify(self);
             
+            if (self.listEntity.selectIndex == indexPath.row) {
+                self.listEntity.selectIndex = -1;
+            } else if (self.listEntity.selectIndex > indexPath.row){
+                self.listEntity.selectIndex --;
+            }
             [self.listEntity.array removeObjectAtIndex:indexPath.row];
             [PoporDomainConfig updateDomain];
             [self.view.infoTV reloadData];
@@ -178,7 +211,6 @@
                     @strongify(self);
                     
                     UITextField * nameTF = oneAC.textFields[0];
-                    //NSLog(@"更新 name: %@", nameTF.text);
                     entity.title = nameTF.text;
                     
                     [PoporDomainConfig updateDomain];
@@ -211,7 +243,6 @@
                     @strongify(self);
                     
                     UITextField * nameTF = oneAC.textFields[0];
-                    //NSLog(@"更新 name: %@", nameTF.text);
                     entity.domain = nameTF.text;
                     
                     [PoporDomainConfig updateDomain];
@@ -240,11 +271,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    PoporDomainConfigEntity * entity = self.listEntity.array[indexPath.row];
-    
-    self.listEntity.domain = entity.domain;
-    
-    [PoporDomainConfig updateDomain];
+    if (indexPath.row != self.listEntity.selectIndex) {
+        UITableViewCell * cellOld = [tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:self.listEntity.selectIndex inSection:0]];
+        UITableViewCell * cellNew = [tableView cellForRowAtIndexPath:indexPath];
+        
+        cellOld.accessoryType = UITableViewCellAccessoryNone;
+        cellNew.accessoryType = UITableViewCellAccessoryCheckmark;
+        
+        PoporDomainConfigEntity * entity = self.listEntity.array[indexPath.row];
+        
+        self.listEntity.domain = entity.domain;
+        self.view.defaultUrlTF.text = self.listEntity.domain;
+        [PoporDomainConfig updateDomain];
+        
+        self.listEntity.selectIndex = indexPath.row;
+    }
 }
 
 #pragma mark - Interactor_EventHandler
@@ -258,15 +299,54 @@
 #pragma mark - VC_EventHandler
 - (void)saveAction {
     
-    
+    {
+        @weakify(self);
+        
+        UIAlertController * oneAC = [UIAlertController alertControllerWithTitle:@"新增" message:@"请设置标题" preferredStyle:UIAlertControllerStyleAlert];
+        
+        [oneAC addTextFieldWithConfigurationHandler:^(UITextField *textField){
+            
+            textField.placeholder = @"标题";
+            textField.text = @"";
+        }];
+        
+        UIAlertAction * cancleAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction * changeAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            @strongify(self);
+            
+            UITextField * nameTF = oneAC.textFields[0];
+            
+            PoporDomainConfigEntity * entity = [PoporDomainConfigEntity new];
+            if (nameTF.text.length == 0) {
+                entity.title  = nil;
+            }else{
+                entity.title  = nameTF.text;
+            }
+            
+            entity.domain = self.view.defaultUrlTF.text;
+            
+            self.listEntity.selectIndex = self.listEntity.array.count;
+            [self.listEntity.array addObject:entity];
+            
+            [PoporDomainConfig updateDomain];
+            
+            [self.view.infoTV reloadData];
+            [self.view.infoTV scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.listEntity.array.count-1 inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+        }];
+        
+        [oneAC addAction:cancleAction];
+        [oneAC addAction:changeAction];
+        
+        [self.view.vc presentViewController:oneAC animated:YES completion:nil];
+    }
 }
 
-- (void)selectSegmentedItem:(UISegmentedControl *)sender {
-    
+- (void)selectCvIndex:(NSInteger)index {
+    self.view.defaultUrlTF.text = self.listEntity.domain;
     [self.view.infoTV reloadData];
-    
-}
 
+    [self.view.infoTV scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.listEntity.selectIndex inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+}
 
 #pragma mark - Interactor_EventHandler
 

@@ -9,13 +9,15 @@
 
 #import <PoporUI/UIInsetsTextField.h>
 
+static int PoporDomainConfigVCXGap  = 20;
+static int PoporDomainConfigCvXyGap = 1; // 左右上下间隔
+
 // MARK: 对外接口
 @protocol PoporDomainConfigVCProtocol <NSObject>
 
 - (UIViewController *)vc;
 
 // MARK: 自己的
-@property (nonatomic, strong) UISegmentedControl *segmenteControl;
 @property (nonatomic, strong) UIInsetsTextField * defaultUrlTF;
 @property (nonatomic, strong) UIButton    * saveBT;
 @property (nonatomic, strong) UITableView * infoTV;
@@ -34,6 +36,5 @@
 @protocol PoporDomainConfigVCEventHandler <NSObject>
 
 - (void)saveAction;
-- (void)selectSegmentedItem:(UISegmentedControl *)sender;
 
 @end

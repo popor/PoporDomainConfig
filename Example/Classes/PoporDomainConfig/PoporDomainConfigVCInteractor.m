@@ -15,7 +15,7 @@
 
 - (id)init {
     if (self = [super init]) {
-        
+        _cvSelectIndex = -1;
     }
     return self;
 }

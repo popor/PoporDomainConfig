@@ -53,7 +53,9 @@ static NSString * SaveKey = @"config";
                 NSMutableArray * mArray = [NSMutableArray new];
                 NSArray *array = (NSArray *)jsonObject;
                 for (id oneID in array) {
-                    [mArray addObject:[PoporDomainConfigListEntity yy_modelWithDictionary:oneID]];
+                    PoporDomainConfigListEntity * le = [PoporDomainConfigListEntity yy_modelWithDictionary:oneID];
+                    
+                    [mArray addObject:le];
                 }
                 return mArray;
             };
@@ -66,9 +68,12 @@ static NSString * SaveKey = @"config";
     return instance;
 }
 
-+ (void)setNetDefaultArray:(NSMutableArray<PoporDomainConfigListEntity *> *)array {
++ (void)setNetDefaultArray:(NSMutableArray<PoporDomainConfigListEntity *> *)array defaultInfo:(NSString * _Nullable)info {
+    
     PoporDomainConfig * config = [PoporDomainConfig share];
     config.netDefaultArray = array;
+    config.defaultInfo     = info ? : @"域名修改只对debug版本APP有效";
+    
     
     config.netArray = (NSMutableArray *)[config.yyDiskCache objectForKey:SaveKey];
     
@@ -92,7 +97,9 @@ static NSString * SaveKey = @"config";
                 break;
             }
         }
+        // 发生了变更,需要刷新默认数据
         if (isNeedUpdate) {
+            config.netArray = array.mutableCopy;
             [self updateLeTitleW];
             [self updateDomain];
         }
@@ -101,10 +108,25 @@ static NSString * SaveKey = @"config";
 }
 
 + (void)updateLeTitleW {
+    int totalW = 0;
     PoporDomainConfig * config = [PoporDomainConfig share];
+    if (config.netArray.count == 0) {
+        return;
+    }
     for (int i = 0; i<config.netArray.count; i++) {
         PoporDomainConfigListEntity * leCurrent = config.netArray[i];
         leCurrent.titleW = [PoporDomainConfigCC cellW:leCurrent.title];
+        totalW += leCurrent.titleW;
+    }
+    
+    // 检查是不是少容量的文字
+    int maxW = [[UIScreen mainScreen] bounds].size.width - PoporDomainConfigVCXGap*2;
+    if (totalW + config.netArray.count*PoporDomainConfigCvXyGap <= maxW) {
+        int w = maxW/config.netArray.count;
+        for (int i = 0; i<config.netArray.count; i++) {
+            PoporDomainConfigListEntity * leCurrent = config.netArray[i];
+            leCurrent.titleW = w - PoporDomainConfigCvXyGap;
+        }
     }
 }
 
