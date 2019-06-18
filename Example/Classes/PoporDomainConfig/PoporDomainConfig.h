@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 假如数组个数 <= 1,将隐藏infoCV.
 + (void)setNetDefaultArray:(NSMutableArray<PoporDomainConfigListEntity *> *)array defaultInfo:(NSString * _Nullable)info;
 
++ (void)restoreNetArrayAt:(NSInteger)index;
+
 + (void)updateDomain;
 
 @end

@@ -15,6 +15,8 @@
 #import <PoporFoundation/NSString+format.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 
+#import <PoporUI/IToastKeyboard.h>
+
 @interface PoporDomainConfigVCPresenter ()
 
 @property (nonatomic, weak  ) id<PoporDomainConfigVCProtocol> view;
@@ -190,6 +192,10 @@
                 self.listEntity.selectIndex --;
             }
             [self.listEntity.array removeObjectAtIndex:indexPath.row];
+            if (self.listEntity.array.count == 0) {
+                AlertToastTitle(@"恢复默认数据");
+                [PoporDomainConfig restoreNetArrayAt:self.interactor.cvSelectIndex];
+            }
             [PoporDomainConfig updateDomain];
             [self.view.infoTV reloadData];
         }];
@@ -344,8 +350,11 @@
 - (void)selectCvIndex:(NSInteger)index {
     self.view.defaultUrlTF.text = self.listEntity.domain;
     [self.view.infoTV reloadData];
-
-    [self.view.infoTV scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.listEntity.selectIndex inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+    
+    if (self.listEntity.selectIndex >= 0 && self.listEntity.selectIndex < self.listEntity.array.count) {
+        [self.view.infoTV scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.listEntity.selectIndex inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+        
+    }
 }
 
 #pragma mark - Interactor_EventHandler

@@ -1,6 +1,6 @@
 {
   "name": "PoporDomainConfig",
-  "version": "0.0.01",
+  "version": "0.0.02",
   "summary": "简易的域名配置工具,方便开发测试.",
   "homepage": "https://github.com/popor/PoporDomainConfig",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/popor/PoporDomainConfig.git",
-    "tag": "0.0.01"
+    "tag": "0.0.02"
   },
   "platforms": {
     "ios": "8.0"
@@ -44,6 +44,9 @@
 
     ],
     "PoporUI/UINavigationController": [
+
+    ],
+    "PoporUI/IToast": [
 
     ]
   }

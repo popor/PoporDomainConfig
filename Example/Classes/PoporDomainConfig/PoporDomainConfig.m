@@ -30,8 +30,7 @@ static NSString * SaveKey = @"config";
     static dispatch_once_t once;
     static PoporDomainConfig * instance;
     dispatch_once(&once, ^{
-        instance = [self new];
-        instance.netDefaultArray = [NSMutableArray<PoporDomainConfigListEntity *> new];
+        instance = [PoporDomainConfig new];
         instance.netArray = [NSMutableArray<PoporDomainConfigListEntity *> new];
        
         {
@@ -59,11 +58,8 @@ static NSString * SaveKey = @"config";
                 }
                 return mArray;
             };
-            
             instance.yyDiskCache = yyDiskCache;
         }
-        
-        
     });
     return instance;
 }
@@ -74,60 +70,72 @@ static NSString * SaveKey = @"config";
     config.netDefaultArray = array;
     config.defaultInfo     = info ? : @"域名修改只对debug版本APP有效";
     
-    
     config.netArray = (NSMutableArray *)[config.yyDiskCache objectForKey:SaveKey];
-    
     // 判断是否需要更新NetArray
     if (!config.netArray ||
         config.netArray.count != array.count) {
-        config.netArray = array.mutableCopy;
-        
-        [self updateLeTitleW];
-        [self updateDomain];
-        
-    }else{
+        [self restoreNetArray];
+    } else {
+        // 判断是否需要更新NetArray
         BOOL isNeedUpdate = NO;
         for (int i = 0; i<array.count; i++) {
             PoporDomainConfigListEntity * leDefault = config.netDefaultArray[i];
             PoporDomainConfigListEntity * leCurrent = config.netArray[i];
             
-            if (![leDefault.key isEqualToString:leCurrent.key] ||
-                ![leDefault.title isEqualToString:leCurrent.title] ) {
+            if (![leDefault.title isEqualToString:leCurrent.title] ) {
                 isNeedUpdate = YES;
                 break;
             }
         }
         // 发生了变更,需要刷新默认数据
         if (isNeedUpdate) {
-            config.netArray = array.mutableCopy;
-            [self updateLeTitleW];
-            [self updateDomain];
+            [self restoreNetArray];
         }
     }
-
 }
 
-+ (void)updateLeTitleW {
-    int totalW = 0;
++ (void)restoreNetArray {
     PoporDomainConfig * config = [PoporDomainConfig share];
-    if (config.netArray.count == 0) {
+    
+    [self updateLeTitleWArray:config.netDefaultArray];
+    [self updateDomainDefault];
+    
+    config.netArray = (NSMutableArray *)[config.yyDiskCache objectForKey:SaveKey];
+}
+
++ (void)restoreNetArrayAt:(NSInteger)index {
+    PoporDomainConfig * config = [PoporDomainConfig share];
+    PoporDomainConfigListEntity * leDefault = config.netDefaultArray[index];
+    PoporDomainConfigListEntity * leCurrent = config.netArray[index];
+    
+    [leCurrent.array addObjectsFromArray:leDefault.array];
+}
+
++ (void)updateLeTitleWArray:(NSMutableArray<PoporDomainConfigListEntity *> *)array {
+    int totalW = 0;
+    if (array.count == 0) {
         return;
     }
-    for (int i = 0; i<config.netArray.count; i++) {
-        PoporDomainConfigListEntity * leCurrent = config.netArray[i];
+    for (int i = 0; i<array.count; i++) {
+        PoporDomainConfigListEntity * leCurrent = array[i];
         leCurrent.titleW = [PoporDomainConfigCC cellW:leCurrent.title];
         totalW += leCurrent.titleW;
     }
     
     // 检查是不是少容量的文字
     int maxW = [[UIScreen mainScreen] bounds].size.width - PoporDomainConfigVCXGap*2;
-    if (totalW + config.netArray.count*PoporDomainConfigCvXyGap <= maxW) {
-        int w = maxW/config.netArray.count;
-        for (int i = 0; i<config.netArray.count; i++) {
-            PoporDomainConfigListEntity * leCurrent = config.netArray[i];
+    if (totalW + array.count*PoporDomainConfigCvXyGap <= maxW) {
+        int w = maxW/array.count;
+        for (int i = 0; i<array.count; i++) {
+            PoporDomainConfigListEntity * leCurrent = array[i];
             leCurrent.titleW = w - PoporDomainConfigCvXyGap;
         }
     }
+}
+
++ (void)updateDomainDefault {
+    PoporDomainConfig * config = [PoporDomainConfig share];
+    [config.yyDiskCache setObject:config.netDefaultArray forKey:SaveKey];
 }
 
 + (void)updateDomain {

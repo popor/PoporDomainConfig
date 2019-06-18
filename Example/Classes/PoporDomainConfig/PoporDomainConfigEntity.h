@@ -25,8 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PoporDomainConfigListEntity : NSObject
 
-@property (nonatomic, strong) NSString  * title;
-@property (nonatomic, strong) NSString  * key;
+@property (nonatomic, strong) NSString  * title; // 更改名字之后,将全部更新.
 @property (nonatomic, strong) NSString  * domain;// 当前选择的域名
 @property (nonatomic        ) int       titleW;// title 所占用的宽度
 @property (nonatomic        ) NSInteger selectIndex;

@@ -47,7 +47,6 @@
 
 - (PoporDomainConfigListEntity *)getBaiduEntity {
     PoporDomainConfigListEntity * entity = [PoporDomainConfigListEntity new];
-    entity.key    = @"baidu";
     entity.title  = @"百度";
     entity.domain = @"https://www.baidu.com/dev";
     entity.selectIndex = 0;
@@ -62,7 +61,6 @@
 
 - (PoporDomainConfigListEntity *)getBingEntity {
     PoporDomainConfigListEntity * entity = [PoporDomainConfigListEntity new];
-    entity.key    = @"bing";
     entity.title  = @"必应";
     entity.domain = @"https://cn.bing.com/dev";
     entity.selectIndex = 0;
@@ -77,7 +75,6 @@
 
 - (PoporDomainConfigListEntity *)getGoogleEntity {
     PoporDomainConfigListEntity * entity = [PoporDomainConfigListEntity new];
-    entity.key    = @"google";
     entity.title  = @"谷歌";
     entity.domain = @"https://www.google.com/dev";
     entity.selectIndex = 0;
