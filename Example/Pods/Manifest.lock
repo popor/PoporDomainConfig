@@ -1,6 +1,6 @@
 PODS:
   - Masonry (1.1.0)
-  - PoporDomainConfig (0.0.02):
+  - PoporDomainConfig (0.0.03):
     - Masonry
     - PoporFoundation/PrefixCore
     - PoporUI/IToast
@@ -20,13 +20,13 @@ PODS:
   - PoporFoundation/PrefixCore (0.0.38):
     - PoporFoundation/PrefixOs
   - PoporFoundation/PrefixOs (0.0.38)
-  - PoporUI/IToast (0.0.47):
+  - PoporUI/IToast (0.0.48):
     - PoporFoundation/NSString
-  - PoporUI/UIImage (0.0.47)
-  - PoporUI/UINavigationController (0.0.47)
-  - PoporUI/UITextField (0.0.47):
+  - PoporUI/UIImage (0.0.48)
+  - PoporUI/UINavigationController (0.0.48)
+  - PoporUI/UITextField (0.0.48):
     - PoporFoundation/NSString
-  - PoporUI/UIViewController (0.0.47):
+  - PoporUI/UIViewController (0.0.48):
     - PoporFoundation/NSObject
     - PoporFoundation/NSString
     - PoporFoundation/PrefixCore
@@ -53,9 +53,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  PoporDomainConfig: 376fddca730df950853c37d9ac8a6e1d822b696f
+  PoporDomainConfig: b0726ad885d498378551c9e4fb949232361d4179
   PoporFoundation: 85f65b986fda7e86584c41efdeca8ce76b77bb04
-  PoporUI: 9b9b50ac34e1cffefd927b744b7e67d2668effd3
+  PoporUI: ff23098acd6b5e6959d1684a2d4904e1ea79359f
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30

@@ -246,11 +246,9 @@
     cv.delegate   = self.present;
     cv.dataSource = self.present;
     
-    int top = [self.navigationController getTopMargin];
-    
     [cv mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(PoporDomainConfigVCXGap);
-        make.top.mas_equalTo(top+10);
+        make.top.mas_equalTo(self.navigationController.topMargin+10);
         
         make.right.mas_equalTo(-PoporDomainConfigVCXGap);
         
