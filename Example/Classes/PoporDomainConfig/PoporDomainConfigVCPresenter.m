@@ -193,6 +193,9 @@
             }
             [self.listEntity.array removeObjectAtIndex:indexPath.row];
             if (self.listEntity.array.count == 0) {
+                if (self.interactor.cvSelectIndex == -1) {
+                    self.interactor.cvSelectIndex = 0;
+                }
                 AlertToastTitle(@"恢复默认数据");
                 [PoporDomainConfig restoreNetArrayAt:self.interactor.cvSelectIndex];
             }

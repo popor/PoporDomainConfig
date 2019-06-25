@@ -86,6 +86,12 @@ static NSString * SaveKey = @"config";
                 isNeedUpdate = YES;
                 break;
             }
+            // 检查数组数量是否为空,防止代码出bug.
+            if (leCurrent.array.count == 0 &&
+                leDefault.array.count != 0) {
+                isNeedUpdate = YES;
+                break;
+            }
         }
         // 发生了变更,需要刷新默认数据
         if (isNeedUpdate) {
