@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PoporDomainConfig'
-  s.version          = '0.0.04'
+  s.version          = '0.0.05'
   s.summary          = '简易的域名配置工具,方便开发测试.'
 
   s.homepage         = 'https://github.com/popor/PoporDomainConfig'

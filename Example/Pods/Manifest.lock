@@ -1,6 +1,6 @@
 PODS:
   - Masonry (1.1.0)
-  - PoporDomainConfig (0.0.04):
+  - PoporDomainConfig (0.0.05):
     - Masonry
     - PoporFoundation/PrefixCore
     - PoporUI/IToast
@@ -53,7 +53,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  PoporDomainConfig: eb72c5539e4fede006ca7f2b95013d893a12dd8c
+  PoporDomainConfig: 9a1431b33b02a74378edecbab68389c2c22899e0
   PoporFoundation: 85f65b986fda7e86584c41efdeca8ce76b77bb04
   PoporUI: ff23098acd6b5e6959d1684a2d4904e1ea79359f
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040

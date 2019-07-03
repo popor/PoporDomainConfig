@@ -7,6 +7,7 @@
 
 #import "PoporDomainConfigVC.h"
 #import "PoporDomainConfigVCPresenter.h"
+#import "PoporDomainConfigVCInteractor.h"
 
 #import "PoporDomainConfig.h"
 #import "PoporDomainConfigCC.h"
@@ -48,19 +49,13 @@
 }
 
 - (void)viewDidLoad {
+    [self assembleViper];
     [super viewDidLoad];
+    
     if (!self.title) {
         self.title = @"域名配置";
     }
     self.view.backgroundColor = [UIColor whiteColor];
-    if (!self.present) {
-        PoporDomainConfigVCPresenter * present = [PoporDomainConfigVCPresenter new];
-        self.present = present;
-        [present setMyView:self];
-    }
-    
-    [self addViews];
-    [self addTapEndEditGRAction];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -77,7 +72,19 @@
     return self;
 }
 
-#pragma mark - views
+- (void)assembleViper {
+    if (!self.present) {
+        PoporDomainConfigVCPresenter * present = [PoporDomainConfigVCPresenter new];
+        PoporDomainConfigVCInteractor * interactor = [PoporDomainConfigVCInteractor new];
+        
+        self.present = present;
+        [present setMyInteractor:interactor];
+        [present setMyView:self];
+        
+        [self addViews];
+    }
+}
+
 - (void)addViews {
     self.infoCV = [self addCV];
     
@@ -168,7 +175,8 @@
         make.right.mas_equalTo(0);
         make.bottom.mas_equalTo(0);
     }];
-    
+
+    [self addTapEndEditGRAction];
 }
 
 - (void)setDefaultValue {
