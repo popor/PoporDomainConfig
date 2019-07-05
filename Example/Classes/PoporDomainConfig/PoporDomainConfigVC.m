@@ -176,12 +176,14 @@
         make.bottom.mas_equalTo(0);
     }];
 
+    [self setDefaultValue];
     [self addTapEndEditGRAction];
 }
 
 - (void)setDefaultValue {
-    //self.defaultUrlTF.placeholder = RootURL_Server_SP_Debug;
-    //self.defaultUrlTF.text        = [DomainConfig share].domainJCH;
+    PoporDomainConfig * config = [PoporDomainConfig share];
+    PoporDomainConfigListEntity * leCurrent = config.netArray[0];
+    self.defaultUrlTF.text = leCurrent.domain;
 }
 
 #pragma mark - UITableView
@@ -220,11 +222,6 @@
         }];
     }
 }
-
-//float gap = 10;
-//float width = (ScreenSize.width - gap*2 - 3)/3;
-//self.ccSize = CGSizeMake(width, width*1.2);
-
 
 - (UICollectionView *)addCV {
     //1.初始化layout

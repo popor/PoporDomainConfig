@@ -289,9 +289,9 @@
         
         self.listEntity.domain = entity.domain;
         self.view.defaultUrlTF.text = self.listEntity.domain;
-        [PoporDomainConfig updateDomain];
-        
         self.listEntity.selectIndex = indexPath.row;
+        
+        [PoporDomainConfig updateDomain];
     }
 }
 
