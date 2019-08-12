@@ -82,6 +82,7 @@
         [present setMyView:self];
         
         [self addViews];
+        [self startEvent];
     }
 }
 
@@ -178,6 +179,11 @@
 
     [self setDefaultValue];
     [self addTapEndEditGRAction];
+}
+
+// 开始执行事件,比如获取网络数据
+- (void)startEvent {
+    [self.present startEvent];
 }
 
 - (void)setDefaultValue {

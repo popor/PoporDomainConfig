@@ -46,6 +46,10 @@
 // 很多操作,需要在设置了view之后才可以执行.
 - (void)setMyView:(id<PoporDomainConfigVCProtocol>)view {
     self.view = view;
+}
+
+// 开始执行事件,比如获取网络数据
+- (void)startEvent {
     self.domainConfig = [PoporDomainConfig share];
     self.cellFont     = [UIFont systemFontOfSize:16];
     self.screenW      = self.view.vc.view.frame.size.width;
