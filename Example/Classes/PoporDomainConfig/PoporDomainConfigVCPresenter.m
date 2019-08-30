@@ -11,8 +11,8 @@
 #import "PoporDomainConfig.h"
 #import "PoporDomainConfigCC.h"
 
-#import <PoporFoundation/NSString+Size.h>
-#import <PoporFoundation/NSString+format.h>
+#import <PoporFoundation/NSString+pSize.h>
+#import <PoporFoundation/NSString+pAtt.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 
 #import <PoporUI/IToastKeyboard.h>

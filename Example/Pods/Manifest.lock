@@ -2,7 +2,7 @@ PODS:
   - Masonry (1.1.0)
   - PoporDomainConfig (0.0.07):
     - Masonry
-    - PoporFoundation/PrefixCore
+    - PoporFoundation/Prefix
     - PoporUI/IToast
     - PoporUI/UIImage
     - PoporUI/UINavigationController
@@ -11,25 +11,25 @@ PODS:
     - ReactiveObjC
     - YYCache
     - YYModel
-  - PoporFoundation/NSArray (0.0.38):
+  - PoporFoundation/NSArray (1.04):
     - PoporFoundation/NSObject
-    - PoporFoundation/PrefixCore
-  - PoporFoundation/NSObject (0.0.38)
-  - PoporFoundation/NSString (0.0.38):
-    - PoporFoundation/PrefixOs
-  - PoporFoundation/PrefixCore (0.0.38):
-    - PoporFoundation/PrefixOs
-  - PoporFoundation/PrefixOs (0.0.38)
-  - PoporUI/IToast (0.0.48):
+    - PoporFoundation/Prefix
+  - PoporFoundation/NSObject (1.04)
+  - PoporFoundation/NSString (1.04):
+    - PoporFoundation/Os
+  - PoporFoundation/Os (1.04)
+  - PoporFoundation/Prefix (1.04):
+    - PoporFoundation/Os
+  - PoporUI/IToast (1.01):
     - PoporFoundation/NSString
-  - PoporUI/UIImage (0.0.48)
-  - PoporUI/UINavigationController (0.0.48)
-  - PoporUI/UITextField (0.0.48):
+  - PoporUI/UIImage (1.01)
+  - PoporUI/UINavigationController (1.01)
+  - PoporUI/UITextField (1.01):
     - PoporFoundation/NSString
-  - PoporUI/UIViewController (0.0.48):
+  - PoporUI/UIViewController (1.01):
     - PoporFoundation/NSObject
     - PoporFoundation/NSString
-    - PoporFoundation/PrefixCore
+    - PoporFoundation/Prefix
   - ReactiveObjC (3.1.1)
   - YYCache (1.0.4)
   - YYModel (1.0.4)
@@ -53,9 +53,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  PoporDomainConfig: bc3d323aa7d8d71f57688b7e8b37d223c8427fa8
-  PoporFoundation: 85f65b986fda7e86584c41efdeca8ce76b77bb04
-  PoporUI: ff23098acd6b5e6959d1684a2d4904e1ea79359f
+  PoporDomainConfig: 4dd3e29036784445c9eccae475d01abefa62c45f
+  PoporFoundation: f2d6a1484ed875024bcf5ab6fd404a0d7c485d10
+  PoporUI: f6e8c424e4c59b489e9315e5116c9dd55f476df9
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30

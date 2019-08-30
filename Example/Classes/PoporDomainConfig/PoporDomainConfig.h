@@ -10,7 +10,7 @@
 
 #import "PoporDomainConfigEntity.h"
 #import "PoporDomainConfigVC.h"
-#import <PoporFoundation/PrefixBlock.h>
+#import <PoporFoundation/Block+pPrefix.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -9,7 +9,7 @@
 #import "PoporDomainConfigViewController.h"
 
 #import "PoporDomainConfig.h"
-#import <PoporFoundation/NSMutableArray+chain.h>
+#import <PoporFoundation/NSMutableArray+pChain.h>
 @interface PoporDomainConfigViewController ()
 
 @end

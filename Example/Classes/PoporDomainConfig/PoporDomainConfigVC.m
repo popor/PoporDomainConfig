@@ -12,9 +12,9 @@
 #import "PoporDomainConfig.h"
 #import "PoporDomainConfigCC.h"
 
-#import <PoporUI/UIViewController+TapEndEdit.h>
-#import <PoporUI/UIImage+create.h>
-#import <PoporUI/UINavigationController+Size.h>
+#import <PoporUI/UIViewController+pTapEndEdit.h>
+#import <PoporUI/UIImage+pCreate.h>
+#import <PoporUI/UINavigationController+pSize.h>
 #import <Masonry/Masonry.h>
 
 @interface PoporDomainConfigVC ()
@@ -96,7 +96,7 @@
     }
 
     if (!self.defaultUrlTF) {
-        UIInsetsTextField * tf = [[UIInsetsTextField alloc] initWithFrame:CGRectZero insets:UIEdgeInsetsMake(0, 5, 0, 5)];
+        UITextField_pInsets * tf = [[UITextField_pInsets alloc] initWithFrame:CGRectZero insets:UIEdgeInsetsMake(0, 5, 0, 5)];
         tf.backgroundColor = [UIColor whiteColor];
         tf.font            = [UIFont systemFontOfSize:16];
         

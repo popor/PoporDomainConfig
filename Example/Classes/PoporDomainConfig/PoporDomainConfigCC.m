@@ -10,7 +10,7 @@
 
 #import <Masonry/Masonry.h>
 
-#import <PoporFoundation/NSString+Size.h>
+#import <PoporFoundation/NSString+pSize.h>
 
 @implementation PoporDomainConfigCC
 
