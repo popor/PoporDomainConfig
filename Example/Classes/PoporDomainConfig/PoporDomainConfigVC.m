@@ -96,7 +96,8 @@
     }
 
     if (!self.defaultUrlTF) {
-        UITextField_pInsets * tf = [[UITextField_pInsets alloc] initWithFrame:CGRectZero insets:UIEdgeInsetsMake(0, 5, 0, 5)];
+        UITextField * tf = [[UITextField alloc] initWithFrame:CGRectZero];
+        tf.textInset       = UIEdgeInsetsMake(0, 5, 0, 5);
         tf.backgroundColor = [UIColor whiteColor];
         tf.font            = [UIFont systemFontOfSize:16];
         

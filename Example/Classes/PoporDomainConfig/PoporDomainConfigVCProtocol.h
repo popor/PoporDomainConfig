@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import <PoporUI/UITextField_pInsets.h>
+#import <PoporUI/UITextField+pInsets.h>
 
 static int PoporDomainConfigVCXGap  = 20;
 static int PoporDomainConfigCvXyGap = 1; // 左右上下间隔
@@ -18,7 +18,7 @@ static int PoporDomainConfigCvXyGap = 1; // 左右上下间隔
 - (UIViewController *)vc;
 
 // MARK: 自己的
-@property (nonatomic, strong) UITextField_pInsets * defaultUrlTF;
+@property (nonatomic, strong) UITextField * defaultUrlTF;
 @property (nonatomic, strong) UIButton    * saveBT;
 @property (nonatomic, strong) UITableView * infoTV;
 @property (nonatomic, strong) UICollectionView * infoCV;
