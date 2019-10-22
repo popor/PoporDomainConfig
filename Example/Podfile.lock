@@ -1,6 +1,6 @@
 PODS:
   - Masonry (1.1.0)
-  - PoporDomainConfig (1.02):
+  - PoporDomainConfig (1.03):
     - Masonry
     - PoporFoundation/Prefix
     - PoporUI/IToast
@@ -11,23 +11,23 @@ PODS:
     - ReactiveObjC
     - YYCache
     - YYModel
-  - PoporFoundation/NSArray (1.06):
+  - PoporFoundation/NSArray (1.09):
     - PoporFoundation/NSObject
     - PoporFoundation/Prefix
-  - PoporFoundation/NSObject (1.06)
-  - PoporFoundation/NSString (1.06):
+  - PoporFoundation/NSObject (1.09)
+  - PoporFoundation/NSString (1.09):
     - PoporFoundation/Os
-  - PoporFoundation/Os (1.06)
-  - PoporFoundation/Prefix (1.06):
+  - PoporFoundation/Os (1.09)
+  - PoporFoundation/Prefix (1.09):
     - PoporFoundation/Os
-  - PoporUI/IToast (1.04):
+  - PoporUI/IToast (1.10):
     - PoporFoundation/NSString
-  - PoporUI/UIImage (1.04)
-  - PoporUI/UINavigationController (1.04)
-  - PoporUI/UITextField (1.04):
+  - PoporUI/UIImage (1.10)
+  - PoporUI/UINavigationController (1.10)
+  - PoporUI/UITextField (1.10):
     - PoporFoundation/NSObject
     - PoporFoundation/NSString
-  - PoporUI/UIViewController (1.04):
+  - PoporUI/UIViewController (1.10):
     - PoporFoundation/NSObject
     - PoporFoundation/NSString
     - PoporFoundation/Prefix
@@ -40,7 +40,7 @@ DEPENDENCIES:
   - PoporFoundation/NSArray
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Masonry
     - PoporFoundation
     - PoporUI
@@ -54,13 +54,13 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  PoporDomainConfig: 1fc3a41a13b7c86e594212ea06bdbee1c481c9a4
-  PoporFoundation: 9ae829d7a9146a05edc900df17e95d12d49392c0
-  PoporUI: c0d5bcb4d5338cd3c0080c73551443051bf0e3bc
+  PoporDomainConfig: c29de6a53aa12509e3660ab070c566462e877dbe
+  PoporFoundation: f080da19da868487426639289bd3a263a7c65aea
+  PoporUI: 3479332df777422196b57bf6c46c431d087df8da
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 28ba66444fac8d9da871f59a661ad1f9c6293616
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

@@ -19,35 +19,36 @@
 		04D7098562CBEC205BC2ADD01D864960 /* NSArray+pJsonDic.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FDA3F9B3375234C7F54A8C13A98C52 /* NSArray+pJsonDic.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		057CC56B863F273F90239274A3F0738E /* RACDynamicSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B33492A76CB9E82AF2DEF9DD4426DC /* RACDynamicSequence.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		05A040F35BF1C88F869404E1A940B493 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C2889B6ABAA8B73F1AAED7A0418FB1D0 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05B0385A7CFCED44EDE5DD21FB4A9DD3 /* UIImage+pSave.h in Headers */ = {isa = PBXBuildFile; fileRef = 671BC35379251FD8D0735A07A8A537C4 /* UIImage+pSave.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05EA1447EEA0EB669F8DEE73964A7C60 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B0C78B6CAFB18B94B6A3AF052EF2E5EA /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06276755700BDE7F79FD30DD21BB12C5 /* UITextField+pPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = E273EDD136221D932859066DA4BB7925 /* UITextField+pPlaceholder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		065CAE65FB81FF3C4F009F8EDDBA2419 /* RACSubscriptingAssignmentTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A4E12A1FE189A8BAD20499D49B52FE /* RACSubscriptingAssignmentTrampoline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08630C69B1E3C11885AF1FFAA736066B /* UIImage+pGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 776F34E9BED6376C0CD35A364058ACA8 /* UIImage+pGradient.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		09449CC4C3FC5B58415C71F02ADB562A /* NSString+RACKeyPathUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C6C0A30A20D543D0A51DB7C0EF5FBDD /* NSString+RACKeyPathUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A8D09BAF8D84776AB4269339E5A75B7 /* NSArray+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E212A9E58D98D4A44665DE09A5326E7 /* NSArray+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AF1AD35706D90B1A91F291B899EF8C0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D1034F176C0CBDD7D0245F6CA5588226 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B18CCE67DD4AC6B5E9D08FF80AF9A00 /* Pods-PoporDomainConfig_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB5A833974CE60B3E74FE85A084ECED /* Pods-PoporDomainConfig_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C30F767DFD13743E58FC2FCFD098E8C /* UINavigationController+pRemove.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E383BD55F6E91B603BE0502B9A5D481 /* UINavigationController+pRemove.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0E29447C2EF5378F08B349D6A6F8D84D /* UIDatePicker+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAE78101CD47455921D2EDB0A128DE3 /* UIDatePicker+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0E525512F05A0B15D9449CD748285129 /* PoporUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D924B4DA5102B6E98748B0AF782AC3 /* PoporUI.framework */; };
 		0E7FF8C6F624558702E00178BC97E84A /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3127642A3838B763CE68C5C7BCC31195 /* MASViewAttribute.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0E800651487D163E91FAE792BCB28079 /* UIViewController+pLeeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B5685FB3EC6722380CBE404A35E57971 /* UIViewController+pLeeBase.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1130383339EC44591FDFD27778AC4727 /* RACStream.h in Headers */ = {isa = PBXBuildFile; fileRef = DE4CB3B5E92CFA6F34B3AB8EC22A3F20 /* RACStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		115872043AF8A28119E9968D8EF87BE3 /* RACDynamicSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 437FD0CEE1ECA30B15C4AF815727952E /* RACDynamicSignal.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		11A307359319D85192DD63F48D58270F /* RACGroupedSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5938CE67465C54F0143C573BB4EA0FBF /* RACGroupedSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12214A06624B1CB7EA1617EE8B321B48 /* NSNotificationCenter+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = F29EC8C63FE01885A2510DAE2CD4621E /* NSNotificationCenter+RACSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12306035F7DF6B0736C1361500C599D5 /* PoporDomainConfigEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 7937D0B76FBF50B9F4354BD12D0A227B /* PoporDomainConfigEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12D2EFD8BEA8BE4952ACEEC7615F64AE /* UITextField+pMaxLength.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9214523155FCFCF25A164FCE31CB6E /* UITextField+pMaxLength.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12E263CAE24019CFE3D33943B079439A /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 838F6A58145DE5028FDFEA9E411D4D48 /* MASConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		13F0A78A2BA881207E1B34A3F9A800B2 /* RACKVOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B205CC77ADDF64C79A2577F596EBE /* RACKVOProxy.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		14B7EC67AA20F0BC1A23C5730EB47431 /* UIViewController+pLeeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = F786C56DBFB451EA55DAB31833D1BFBB /* UIViewController+pLeeBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14B96AD36F24A9E8B36B71DC506F6ECE /* UITextField+pInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBA5E0425FB1E80ABDC48FC479A7CC3 /* UITextField+pInsets.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16C3C17749774E01955E71334144BE45 /* UIViewController+pLeeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B5685FB3EC6722380CBE404A35E57971 /* UIViewController+pLeeBase.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1783E4F2C1B18875779118157A3F7368 /* PoporDomainConfigVCInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = AA61CEF4784CA0FC9F390843CD336010 /* PoporDomainConfigVCInteractor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		19AA4AE1EEAEBB231C0214F9700C8937 /* UIImage+pGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2803B81C1252C5E77054F59C10A51223 /* UIImage+pGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19E83E23BF6AAF84CF5A8568EEEC826A /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9BB05F08B9DEE03D020A9E05DE6085 /* YYDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C50837E0A14343743123ED2F8D96C62 /* UIImage+pGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2803B81C1252C5E77054F59C10A51223 /* UIImage+pGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D6242EAD036EE2EC7258202DCC48CD5 /* RACCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F15683611333E06EFCA872A5472E908 /* RACCommand.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1DEF13D6C9B2AE39E0B701184BBE1C1F /* NSString+pEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BC2F1098A1AA7D75AC1BBB572B7A913 /* NSString+pEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F0AA4849ACE4008654376D250ED0C42 /* UINavigationController+pSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 538953365C6254F1F8CD53EE61C3F769 /* UINavigationController+pSize.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		20C47629AD9EFF6232796690CA4FF6AC /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = BD99CAD8E929AEB867B9E219A5DB2ECE /* MASConstraintMaker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		20F8DF57D21AA944FBE839BF46C2C9EC /* RACStringSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B530E65F6A66DD55F433210CF2CD3F1 /* RACStringSequence.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		20F9F684CCCD071856F1B1FDF6EE95B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E0F6EE165631E2397086F90B6CAAC4 /* Foundation.framework */; };
+		23AAC181F4CC98A8D89B4B5B4124C303 /* IToastPTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F2388B2BE5E7CC19AA532EF6755109 /* IToastPTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		244C5B4E485F3B215859EE8FDB207DF1 /* UISegmentedControl+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 123C3677FEF2220FC8672C669DDDF0E1 /* UISegmentedControl+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		246BDF4F2961D91A70B757CC1D4B54EB /* Fun+pPrefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F1715056587E31FAE5A4D858A512A8E /* Fun+pPrefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		248D234778D36A89A6170BA3778A2777 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A47BFF97C8B08CD3AB90F345E1B195DD /* MASViewConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -59,21 +60,19 @@
 		285EBFD93F70F0D8ECF0900611B552FC /* RACReplaySubject.h in Headers */ = {isa = PBXBuildFile; fileRef = 149253C9179FF705A89410A09F122E57 /* RACReplaySubject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		290EB9B514A854A9DD700796BC5F36B9 /* YYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E3374AD60E7DC75AA16D33A196151F89 /* YYCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A5A05F9D61D25BC898E9D1038EE8AE8 /* UICollectionReusableView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 337780AAE464C1536212814D98C0C94E /* UICollectionReusableView+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2B163255BC7BA4E884BB75560E082C78 /* UIImage+pTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 769F02F700180DAC0FE723B1B911D812 /* UIImage+pTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B8A9D87769F35120D442973C754DD2C /* UITextField+pTextRange.m in Sources */ = {isa = PBXBuildFile; fileRef = B43ADB6D3A0D098AD24E28F7197800DD /* UITextField+pTextRange.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2C04458469EB7EFBAE07E72C5603AC12 /* UIGestureRecognizer+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = AE58C6AD02FA108FC6EA20CB467514DA /* UIGestureRecognizer+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C43817529EB28E5896C72C9BE82A2FA /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F0496A6FBECE9FEDF3F48BAB907DF8 /* ViewController+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2CB6BADD9E581E4895AA394E70112D9C /* UITableViewCell+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5B24393C7B35C21831DFFAA7E2B09C /* UITableViewCell+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2CFBD7C9F7BF324AEBDF5DBE12788A1C /* RACKVOTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = 8740BA4E2DFD7DD8A7952E8497DB3444 /* RACKVOTrampoline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DEA6CF7867E140594E511EA17136772 /* NSString+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D956FC5C9F0ADD39D74A0E72AFFAB3 /* NSString+RACSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2E39983C047CE46D744D86F868B085CE /* UIImage+pSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABFD3F7312CF0948C32646640E998EF /* UIImage+pSave.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2F32EE3BBB062AD24B11801BC6043FC7 /* PoporDomainConfig-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7035A1A8AB643461E6C3E20BDA9BE59F /* PoporDomainConfig-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		306D6DDFE3D213F3604C9A2A29EFFE68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E0F6EE165631E2397086F90B6CAAC4 /* Foundation.framework */; };
-		3098F92EC4066EF26C3698D5837CD1A5 /* UITextField+pInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = E79CADB16C57D83957EDA533599B319A /* UITextField+pInsets.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		308ABCA28307EEDC3EAAE08E8563A319 /* UITextField+pFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF5BBE5D9EA95F04573B081250762B9 /* UITextField+pFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3099F43B6FAE275D64113B33EEF7523D /* RACDynamicSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9234190677468B07A53678B3C3A2DA /* RACDynamicSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30B616159017022B8A978421B192F900 /* RACSubscriptionScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = CA789C3A38A9A801B9A89F7EB7F4886F /* RACSubscriptionScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31557744B5DAB41FAD8F7FFF28493E92 /* NSObject+RACDeallocating.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB7FFD598FE5F678E22451686CEE94A /* NSObject+RACDeallocating.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		316A9EDFA75FB8E3AD32289603EA99C8 /* UITextField+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC1F97952A95D6973D55F9696B28FD0 /* UITextField+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		330DE6C664992FA1910134FF059BEAC9 /* IToast_Popor.m in Sources */ = {isa = PBXBuildFile; fileRef = E9152E4F7AFF9901C9B4AD006D2F1C86 /* IToast_Popor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		33329B64AFE6E09187CC6498F6A785F6 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CE1147994AA23A8F73C64E9865768B10 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33A5C07EECBC6CDEC078125958E9652E /* UIButton+RACCommandSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = A21A85542E9F56A92466E60634AE15BE /* UIButton+RACCommandSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		343C479CB46A72441C6A7CD0DC4422FF /* ReactiveObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E34EE428956CE1669A2F07E1F9EEE0 /* ReactiveObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -82,19 +81,19 @@
 		346080C0D1CA23399ADD739D722D7CEF /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DDE74ACBCBFBC0C0C17569A9100F869 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34AA7B786DCFEC74EBC1A23D4317DA3D /* RACReturnSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C78B6009A83190575078FD6C92D24B6 /* RACReturnSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34B7DAB3B0E6B6BFEB5F17583F160943 /* NSArray+pSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F13B1F3168F22F10F45DB6767F165D /* NSArray+pSwizzling.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		34D4BBE1EE2CE8F4F8AA1133AA1F41BF /* UIViewController+pAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A79D92A6D4CAE675B37B6573B7B3C19 /* UIViewController+pAC.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		36269C1209A86FF4370DE7C6C49D7A52 /* NSEnumerator+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8B4F576EA707E459272EEFBDC2319 /* NSEnumerator+RACSequenceAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		36D22BDAB5526CBC0F35CCBD7CB0D3FE /* UISlider+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = D513A5D7234DC7AEDBB2D72B19127F37 /* UISlider+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		370A4C7CAECA3E0F24253FC06A4997F8 /* UIImage+pSave.h in Headers */ = {isa = PBXBuildFile; fileRef = 671BC35379251FD8D0735A07A8A537C4 /* UIImage+pSave.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3724854679E7AF18F08E2A7BB3E3AD89 /* RACKVOChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 892E165B5D91B9B566683C3CE43B3AA8 /* RACKVOChannel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		37B75FBE08A76BF5764F6D52B2A9EB32 /* PoporDomainConfigVCInteractor.h in Headers */ = {isa = PBXBuildFile; fileRef = DA47034C06B7132366CADD3773ADBDB0 /* PoporDomainConfigVCInteractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38CA5C300BCBFEA1C957AAB0BF2B10CA /* PoporDomainConfigEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B1E61DCBA39098E7718EF2796E7C2 /* PoporDomainConfigEntity.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3913A69324A0465FB5BD01F056FEFBFD /* RACBehaviorSubject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9A0DA1179680A614578BB84812470D /* RACBehaviorSubject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3924E6317E3B1473D594C6599CB28B2E /* IToast_Popor.h in Headers */ = {isa = PBXBuildFile; fileRef = 25B43ADEF4D7D2D3828A3E4FA638C40B /* IToast_Popor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		395458F25A51D3E5F41CA0412A319E75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB620A777676E3E0CA2BC6F374661DC /* UIKit.framework */; };
 		3964EECFBF1BB84015E3BBF4918AAEA5 /* RACSerialDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0D0E321FBCDA3EBDD3254797C214AB /* RACSerialDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		396DE266A3927C11A8EA493CE7B45AAD /* PoporDomainConfigVCPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AADC311757F98FEDD4178F3EEC276189 /* PoporDomainConfigVCPresenter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3ABEC45FCE149B881226FD57C5547BCE /* UIGestureRecognizer+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 733D39651CCACBE704ED726C8A682DC2 /* UIGestureRecognizer+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3B2893016FA37334634461F919C1BF71 /* NSFileHandle+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E0658487979D2A97D4E799A3B4664 /* NSFileHandle+RACSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3BA579D1E78BF51779FA8058487A0F22 /* UIViewController+pNcBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D35409661B17ED0C968080C60418088 /* UIViewController+pNcBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BFD9B71AF46ABD30BD7839B89A2DA68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E0F6EE165631E2397086F90B6CAAC4 /* Foundation.framework */; };
 		3C957F6A1AB2359C6832FC92F5284337 /* NSUserDefaults+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D540EA9366DC883340201F72DA27D98 /* NSUserDefaults+RACSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DA5F1D8E51CDD102A871C2F37770C7B /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 536FCA2C7F949F4174A53FFFCFC8FF46 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -109,6 +108,7 @@
 		4B592D3B98591DEBF9C5532450421581 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA17D014A53842541A451503FD56EC /* YYClassInfo.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4B9623C06A5D396A9AD9289CAE298C0C /* UISwitch+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BCFB772E9ECFA9E605A61168B41E64A /* UISwitch+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C32C1A1E371718523FC70436EFB6543 /* RACReturnSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE0A054E27F0EEA4235265F11CBB65 /* RACReturnSignal.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4DA018CA94D3992FC17C8A2F737AB4EB /* UIViewController+pNcBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E805CB5E8D94A12DA62D1CD27AA984FE /* UIViewController+pNcBar.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4E24525B5C7E53532225572A502D4300 /* NSDictionary+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF29142E1821282258DAE8A9A497DE9 /* NSDictionary+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E33EF1CCC09DC6DE7E19EDACAF58BDB /* RACErrorSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F301C25364AFC11F44871EB508CA348 /* RACErrorSignal.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4EF12366E55399A8D1863154EBF0B3CB /* UIControl+RACSignalSupportPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C84282A0939A78763BBBF1A494F3BB4 /* UIControl+RACSignalSupportPrivate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -122,27 +122,24 @@
 		526946500F4DE6E7654063DD0FCF8DF4 /* NSArray+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BCBB9D66F96277F51AF2D4D1B925A0 /* NSArray+RACSequenceAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		52903EDD01C372BFED69C974C2AB1FBD /* UIStepper+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AE4E10EBDBDF3988BAB37D76ADD05A /* UIStepper+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		53D48B22979A0BA09B57ACA0EAB219D6 /* UIAlertView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C1B3F6E7298C370AD71BABAB0E2673A1 /* UIAlertView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55EA41005723F821E5194166A8BB2D69 /* UIImage+pGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 776F34E9BED6376C0CD35A364058ACA8 /* UIImage+pGradient.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		56B8C675C8B1E69E13CFFB35F89A1778 /* RACUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 008BACCBE20982FD127D4F6CFE329A67 /* RACUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5801BFDAA18BE6355B7918805E4595DD /* RACSignal+Operations.h in Headers */ = {isa = PBXBuildFile; fileRef = 71509D36CE67C0F9D00D6FD17E40C9B1 /* RACSignal+Operations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58141778E26FFD33D04915F9C4F3979F /* RACSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FA4CAD724D0AA049C4F0B16BB671B8 /* RACSignal.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5831633737FA7A5259794385701F7B69 /* UIViewController+pAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A79D92A6D4CAE675B37B6573B7B3C19 /* UIViewController+pAC.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		58A59FDD34DE1EF623588D73BD132722 /* RACCompoundDisposableProvider.d in Sources */ = {isa = PBXBuildFile; fileRef = F393784860CE423C89BCEC5D1CA9C883 /* RACCompoundDisposableProvider.d */; };
-		59083BE5102D19E9785C38D7D2502D10 /* UITextField+pMaxLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 4654522D75ABF2F1265282CEF170B111 /* UITextField+pMaxLength.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		59F839D2AB7A73AA4D627A2950341B19 /* RACMulticastConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE28406B774132A7618CA9EE98C6DE9 /* RACMulticastConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5A881F7A53AF7141214B89BD28338674 /* YYCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F698D800307F4A14A64612C0CC057D /* YYCache-dummy.m */; };
 		5B578D8166D327E05C56A21C43ECC23A /* RACCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF6603ABB492A6796735FF26E8DFA27 /* RACCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BC0FEC59596D3AC403667F0F05ED8EC /* RACSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA4C48B45A7F96DBC63F10084B6E2A0 /* RACSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C5518D2782F2714C39CC40D0CD220A7 /* NSSet+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F83F00D69C807FE6C3798E9AB06F45 /* NSSet+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CF3FA4B561CB6107E06D3C99033E9F3 /* UIViewController+pAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB3EEFEE919BF349C0CDA9DFEF7D8EB /* UIViewController+pAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D17BF017FC0651CE65C77028AA989D0 /* ReactiveObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2450BD0BE618893CFF4D2B1293F9CEB /* ReactiveObjC.framework */; };
 		5D4FDF7A692F0309C8B9EA6A57F9E045 /* NSOrderedSet+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B5304B8B99091B65E4F84AA2540FACCB /* NSOrderedSet+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5A80DA0E7B441ABA814C805D37844B /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E4E037A98806520B7F19B5CCC7B0A0D /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DAD48E96EFB31489E0B19D0CCAA7475 /* RACChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E47E81C051F0565CE886356B4DA9B /* RACChannel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5F3E0018A9EB707EE8335A58A6824D2B /* UIViewController+pNcBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D35409661B17ED0C968080C60418088 /* UIViewController+pNcBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC4A6597EE01AC249161D323C896083 /* Color+pPrefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA3FC7C68DE1ED145714D90BD19A163 /* Color+pPrefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60440F93201A54E8FD808FC59EC35535 /* PoporDomainConfigVCPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5915E1823888E325C8D8E325A049854A /* PoporDomainConfigVCPresenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		612A9F821768054825BBA36318B71DFD /* Pods-PoporDomainConfig_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B92A3F795FFB176AFC8F0E145D75B42E /* Pods-PoporDomainConfig_Example-dummy.m */; };
-		6181952519C39877FEED823274704074 /* IToastKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B20A6EE25F74BABFE8C22B961CB0D9E /* IToastKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61B784AD3C5B171F3FFDB561973B4BD9 /* PoporUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80336C2A2EAFFB258A20072236B97075 /* PoporUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6223C7A8DD786227C3B141925BC51B8B /* UITextView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB85751535892FCDECB50A5D07B0B5 /* UITextView+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		625C494989A42081416975C1BFCBD88A /* RACBehaviorSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 68884B717ECA5607D74E9E70E53C74FB /* RACBehaviorSubject.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		63ACBE2C89FA751E314DF3CA8C7E274B /* RACValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = D50390460276F13426B057017C3EA095 /* RACValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -152,9 +149,11 @@
 		685859E2F4BD300D902DD3F69A83EC28 /* RACEmptySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 98755A87A67084780B14C91C0BEBFEC6 /* RACEmptySequence.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		68A8F8D60555CADEF556A7F84CB40DDB /* NSObject+RACKVOWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 663A46ED5FE44B8EE6EBC7020E353688 /* NSObject+RACKVOWrapper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		699E119E3D81C2B3431F0935FDEA5113 /* RACUnarySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = DA706B2E2933BE6A58267FAB09694490 /* RACUnarySequence.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		69D1FB87F993EDB3E8195BDE087AC07E /* UIImage+pRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F45F7D19571D86173D3114314F3ECA /* UIImage+pRead.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		69F2F6A2377FB010696167EC180C228B /* IToastPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A33820CBB5CD679FCC4440259C5E17CE /* IToastPTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6A6AD3A5BBDBFD0B4AF936BD518EC0B1 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C6AE64786795DFB4F4E71D9CC88A13E /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BD0BA2C0B899E2E0876A534EF0C8612 /* RACSerialDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7B2115A970D18A2787A5C6EC4A2C18 /* RACSerialDisposable.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6CB7845CCB2EFCCB06D4ACD59886089E /* UIImage+pTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0DCE0B834E204EC0E1F523C13C81F /* UIImage+pTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6CED70B28FD52803D02C33D0065105E2 /* IToast_Popor.h in Headers */ = {isa = PBXBuildFile; fileRef = 63689FF31AC2AD410CB472F6BA0AD0EC /* IToast_Popor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E535DAA7E1B86F2E2B36E3CD43866ED /* NSSet+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C09C2BD371BDDA81DBE1864D901AB5 /* NSSet+RACSequenceAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6F8C4F31BDE0BD0AB5D8C81ADA55A316 /* NSString+pIDCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 39ADAB71F17D8E0EBBDBEA3ADD9E6832 /* NSString+pIDCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		707E503CC7DE4C39392B870B79DC5E46 /* NSString+RACKeyPathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA3267B3B2466514EC0220341F4B07 /* NSString+RACKeyPathUtilities.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -162,26 +161,26 @@
 		724F3F7AF8FF1D7AA63726CA4D0F4832 /* NSMutableArray+pSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E16741AACEA354B0D573E1C94A16C0 /* NSMutableArray+pSwizzling.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7297899E3B9FB9F68905DE65245A069C /* UIRefreshControl+RACCommandSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C68BDB122FD323757624A82EA9C78E51 /* UIRefreshControl+RACCommandSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73B44AFE7F01DC0093C32E5E09119044 /* NSObject+RACSelectorSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D07D013062726849419D98BD251D9 /* NSObject+RACSelectorSignal.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		73F9AFDD1145A48B3C7059415F497482 /* UITextField+pPlaceholder.h in Headers */ = {isa = PBXBuildFile; fileRef = F88C45DA6B7E42D2F1A9F3DB8D48BD15 /* UITextField+pPlaceholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74AA331C643170DA3374A0F105DC0D17 /* UINavigationController+pRemove.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E383BD55F6E91B603BE0502B9A5D481 /* UINavigationController+pRemove.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		74B204617A7F9823DC3EF0C360F03C7E /* NSFileHandle+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 587DB6792149F600240BEE058BF2B83D /* NSFileHandle+RACSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75D3BC0341D4C6A8F3686D9130C6CFF2 /* UIStepper+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9FD8B832974DC3D4106E910207ACA9 /* UIStepper+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76C54A2DA0B8F0C6BCCD65E14A556437 /* YYMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B8F7ECDEFBD59394A1703438EC3CA069 /* YYMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77471AEE39894B018072F10E19D6E22E /* UITextField+pTextRange.m in Sources */ = {isa = PBXBuildFile; fileRef = B43ADB6D3A0D098AD24E28F7197800DD /* UITextField+pTextRange.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		776E9B3ADA3D010A2DCC3A66262EE542 /* MKAnnotationView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DD61CE922F6C1FB285AF11703447CCB1 /* MKAnnotationView+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		79935126AC4643DFDD294503BDD77EF4 /* MKAnnotationView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E78F7E26C885399A66042E89747795D /* MKAnnotationView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		799E887CB13AAC125E5305EA82162C94 /* RACGroupedSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B5FBB40584CEAEEA11B3E4A779E291 /* RACGroupedSignal.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		79E9D7C1CDDB8E3398CAF29C3CB73F9D /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 255EEE6E06B674DD0BFC43BB0E0694CC /* MASCompositeConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7A20597E235ACA88AF01CCAA0AABB5B3 /* RACStringSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = D2BA466061C0DF201ACF148FB2CB610E /* RACStringSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B1D47F0E63893E2B3D9F5F5A0844BD3 /* UIImage+pTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 769F02F700180DAC0FE723B1B911D812 /* UIImage+pTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B5970EDDF58FEB93A4E5A1974F64A55 /* YYModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6DC801FE8EC1A3575657FF91D307C71 /* YYModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B8E230FB005E4F290B24B7E8C4E0343 /* UITableViewHeaderFooterView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = CED251FB2D0E58C1FA23964CE959FC7B /* UITableViewHeaderFooterView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BC9AB1436F81D4342528F4A441D425F /* RACPassthroughSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 64939F6AEF66484299FE7AB658C2A243 /* RACPassthroughSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F042E00474F303F8ECC939E936D81BB /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D38B28E1F6BBB64ED74CD315AC0A636D /* YYMemoryCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7F8E0C9B55B06D10125080025FB6F26A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046272D55A88D6442F394133C7EBAD98 /* CoreFoundation.framework */; };
-		7FFD2D9A2BAB4DDAD8BC452D9C4BB730 /* IToastKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE7A8B7FE0EF55DB4097B6D49B54B55 /* IToastKeyboard.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		80B3E102ADF25705A153E02F998672C2 /* UIImage+pCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65739B29905D13E78E65CFBA384E81B8 /* UIImage+pCreate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		80C27F2F75D30ED6FFA108E2355D7B07 /* RACDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B064ACDF7F94FA7320948A0D1842CD /* RACDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8141AE58B6D8AB879F2D5B24B6243C73 /* RACCompoundDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF82F0245904436EB3B93D528B3FF1E /* RACCompoundDisposable.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		822227D5D815700659AC1F96FF90268D /* RACSignalSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = E2EE0475D61DF44B605B2654D3511E7F /* RACSignalSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82D0F70F1E1C807DE938E2B8F15B917E /* UITextField+pTextRange.h in Headers */ = {isa = PBXBuildFile; fileRef = A59CD478F09AE2C0581CC7ACD276EA07 /* UITextField+pTextRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84CE056B22AC8B33C78DE05BCA9B480F /* UITextField+pInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBA5E0425FB1E80ABDC48FC479A7CC3 /* UITextField+pInsets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		857628CEFBC7F0C0DF98F72939BB7C50 /* NSArray+pSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = F198A1EFBC3963D099A2632A9DEC2FA1 /* NSArray+pSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8578255811B58BF2EA77EB168BCA732E /* RACReplaySubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A87963A110389173ADDAE9E347D5832 /* RACReplaySubject.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		858B75BE0F6116AC9DFC881A84AD727E /* NSString+pTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF440E50A6E4C00DA70DE6C2A3210FC /* NSString+pTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -192,11 +191,8 @@
 		8CE77CBCAAACC816A39309A477537DB4 /* RACIndexSetSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 272A9A38ECB18BC2848E4D48E5CBB9F7 /* RACIndexSetSequence.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8CF837323D5FB896D4C5AF16AEA73404 /* RACDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C780A8948A6EF2C01B153C477E370C90 /* RACDelegateProxy.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8D035C1AA2FFDD46229ACFA18BD9467A /* NSObject+RACKVOWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A014C4295AEEAE0AF3AE62DD5FA156E /* NSObject+RACKVOWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D2D14BA04026963BD8DE790AD8B8EFC /* IToast_Popor.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B20FCB463C82FBF2A53C454A67279 /* IToast_Popor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8D4D1F6E4709EBB13974E95DC1059DDC /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D08E136CF9975864B2E6F0D58D29E02C /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D5BA63135F5992E62ACAD68A89194D0 /* UITextField+pFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1148075542ED81FA2F8F4ACF06BD1 /* UITextField+pFormat.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8D65CE579E516BDD5FB36CAA21D693F6 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 62CAF492B0451D4174E9A2428EEAAE63 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EA19D1A8472ED94CACAD5B834FD1BD2 /* UIImage+pCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65739B29905D13E78E65CFBA384E81B8 /* UIImage+pCreate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8FE73F8A58197A5338CD164848EC990A /* RACEagerSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C935C77D38D0C65D29DEEBDB214742E /* RACEagerSequence.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9017FEBE3F9DC2567A47D9B1485C8678 /* NSData+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E19436F3CD2D7D19D5B12D8E67093686 /* NSData+RACSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		90843DF6AD34433DA6CC5C51DDAB389B /* NSInvocation+RACTypeParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = F5492A9DF4139923B02F41955E60F1C6 /* NSInvocation+RACTypeParsing.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -213,6 +209,9 @@
 		9BCFDBB6D8C4DB80ABBB1289E191CB8B /* Os+pPrefix.h in Headers */ = {isa = PBXBuildFile; fileRef = E759FC60B66FB63AC029B36DE306B95C /* Os+pPrefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D16ACF02049D8D2CD726F35CD2E624C /* NSDictionary+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB7E24DCA870EA920FDF2E6D96BF1C /* NSDictionary+RACSequenceAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9D546E1168C04B0B2EAE005D9275D18B /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 82D725CD94705CDF00AE58ADEAA28BB5 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E2FFB6EF09DCAFB7B677A0EA0F0E28C /* UIImage+pTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0DCE0B834E204EC0E1F523C13C81F /* UIImage+pTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9E7990EF8B9F8B886BE96CA8EEE46662 /* UITextField+pMaxLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 4654522D75ABF2F1265282CEF170B111 /* UITextField+pMaxLength.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9F47302EE8305D78FD67EAD0542ADA5A /* UINavigationController+pSize.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7037E14EE457895C3F603799CC01F5 /* UINavigationController+pSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F4B8EFDBBAF2F7A43329DBBFEAFC2D1 /* RACArraySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF6B2BA544C1428C7AF3EE1F850FF4C /* RACArraySequence.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A040053EC03D811DB1F0B29DFB81E4C9 /* NSString+pSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4B0A76713E4566AEB54961C762ACD2 /* NSString+pSize.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A0B730543D6079794B58F08B6C35235E /* PoporFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8131E3F4F1F01418BE79E4E6A70B65A1 /* PoporFoundation.framework */; };
@@ -221,12 +220,15 @@
 		A1A8A78EA379CE466086BB6032A138A0 /* PoporDomainConfig-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC8E01FAB1F50B40A943DBAF069B81 /* PoporDomainConfig-dummy.m */; };
 		A1C9CB10F42F251396370A79F9520AEE /* UITextView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF8EA0E0C41A580474B26290FED4DFC /* UITextView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1FF546D2C8CAB2508ECCCDFD2005147 /* NSMutableArray+pSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA0444586A37D358334FBB4C49DFDE1 /* NSMutableArray+pSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3030FEE94C05DD41537FBECA00522A0 /* UITextField+pMaxLength.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9214523155FCFCF25A164FCE31CB6E /* UITextField+pMaxLength.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A264EE7CD77012171C465FDDE321A57D /* PoporUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80336C2A2EAFFB258A20072236B97075 /* PoporUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A338763737029DEC7D26967B43C3C3C1 /* UIViewController+pTapEndEdit.h in Headers */ = {isa = PBXBuildFile; fileRef = 887FC1319E0FCAAE12FF723B71DF9D7D /* UIViewController+pTapEndEdit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A42551E3F301EA450CF89C525AAE7A58 /* UIControl+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD5A170D97D93DF00F54C49AF1C493A /* UIControl+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A43C14C22AC7CE3C381AEA514D976CD8 /* NSUserDefaults+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C083174C72936DE8F75E9BDF97323554 /* NSUserDefaults+RACSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A4729617D8B1EA36EC58E0EBAD5BDB81 /* RACArraySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AB55B3D621561C5173B842521A99639 /* RACArraySequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A608939CDFAF063BBBBF0EE179029533 /* UITextField+pTextRange.h in Headers */ = {isa = PBXBuildFile; fileRef = A59CD478F09AE2C0581CC7ACD276EA07 /* UITextField+pTextRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A62B311BF4F39A80FEA86500AF92AF72 /* UITextField+pPlaceholder.h in Headers */ = {isa = PBXBuildFile; fileRef = F88C45DA6B7E42D2F1A9F3DB8D48BD15 /* UITextField+pPlaceholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A66595668EE0D6176A281133640030CB /* NSNotificationCenter+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D27BA9C5735A747BC4E142AC576DB86E /* NSNotificationCenter+RACSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A66F3A3F7EF2E8E3E56C26AC79782611 /* UIImage+pCreate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6BDEC47D5F90211A53570079A416E4 /* UIImage+pCreate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6A0E10AA12431419E00A11DBB1D67C6 /* UITextField+pInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = E79CADB16C57D83957EDA533599B319A /* UITextField+pInsets.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A6C9C21057B89EBE4B13E22BC9042E1A /* NSMutableArray+pChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B8A20EE24F2DE5E2FF58C759ACD868 /* NSMutableArray+pChain.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A7CE262419E3419879D39342B1C30851 /* UIDatePicker+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 102CB365D16DF950DA784E9C2554F09C /* UIDatePicker+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A90ED55B33058AA540F211FB0337DAF3 /* NSIndexSet+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A38819345EAE46A757F2973CE1B825F /* NSIndexSet+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -237,6 +239,7 @@
 		AB4A319035E02E51A0869615D7BDE0CD /* NSURLConnection+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C673E2869028423043E9F77A2C08469 /* NSURLConnection+RACSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC3DB7BABA4247F0FBF4866B6F568065 /* UITableViewCell+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E3AA11860832AB60AEE367A7A9E75 /* UITableViewCell+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC3FC3A6A1CAF38505ACA6419E374621 /* RACDynamicSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8C55CDFFF84E912357686CAB1D80BE /* RACDynamicSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC83403FA1C967D4A46733684B79422E /* UIImage+pCreate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6BDEC47D5F90211A53570079A416E4 /* UIImage+pCreate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACE558DB0E2D5D4BECD6538D7FEFFA5B /* RACQueueScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B79AEF645DAD35D7731881D113224CD /* RACQueueScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ADADDAAEF3DD24BC1B7C97DC9D33A288 /* NSObject+RACDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 74087CE71B7BD22978119CB5F95FF1D2 /* NSObject+RACDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEFF925502090A987996E53841C650A1 /* UIBarButtonItem+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D08A4FFC534F0EC9D7977310B26F /* UIBarButtonItem+RACCommandSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -245,10 +248,9 @@
 		AFA58D19ECCC9CB15B3D5E2EAD816A32 /* PoporDomainConfigVCProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C7E5E8FB22C30E1068666B8CA70893A /* PoporDomainConfigVCProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0055C7C7A151A2102A70955E9311613 /* UICollectionReusableView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2B11646EA8647821417B2E86ABDED8 /* UICollectionReusableView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0EE11C7B28618F3DD73B594EACD9BE1 /* PoporFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8184DE8C5534A25DA40A0D7DB200CCF /* PoporFoundation-dummy.m */; };
-		B212FB72887395E6868F644ACB409726 /* UINavigationController+pRemove.h in Headers */ = {isa = PBXBuildFile; fileRef = FFEF68C1E1207A2914E2C90017796B37 /* UINavigationController+pRemove.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B413B013DD87C9680B7CE61F93DD4C35 /* RACPassthroughSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F351CC26FC256D3691C1A64B7010845 /* RACPassthroughSubscriber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B45613754965384C6ACFB275A1116335 /* UITextField+pFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF5BBE5D9EA95F04573B081250762B9 /* UITextField+pFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B67B68296FBB10864C3D054985E79C8A /* RACTestScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BABD890938A18978959063FB127E4FE /* RACTestScheduler.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B6DF1D5C8E5A007CD30DB52DD072AA90 /* UIImage+pSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABFD3F7312CF0948C32646640E998EF /* UIImage+pSave.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B7476A5D83803E31E85E4592854E2F40 /* NSEnumerator+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F638E6EF4079B7054102335327CDD6 /* NSEnumerator+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7ED8F3B46D76D882591B54E2BE1D028 /* UIBarButtonItem+RACCommandSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8FD6775584B5AB57C39C463E3E1F2B /* UIBarButtonItem+RACCommandSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7F2DD40D181D6545E709FB14AF6125F /* PoporDomainConfigVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 928B909FDC22BF8B75083381033F63C6 /* PoporDomainConfigVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -262,10 +264,10 @@
 		BEF14DC121129B0DC263E8392BC62FC7 /* NSObject+RACLifting.h in Headers */ = {isa = PBXBuildFile; fileRef = C74430E657CA822861101D2D7516300C /* NSObject+RACLifting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF238237D3BA935BBEBAD1E69358DB20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E0F6EE165631E2397086F90B6CAAC4 /* Foundation.framework */; };
 		BFA589093352EDC4E7705FF2FAF574AB /* RACUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3ECBE268EA938F64CB403E0DF73760 /* RACUnit.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C0623D91CE7EEF6A927611EC955C9947 /* UIViewController+pTapEndEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = 749360C47D34883E3C17ABE55BC2F5BB /* UIViewController+pTapEndEdit.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C15A962B1346A870F7FDB41FDD00040A /* YYCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F1E716E37E58DA5460F5ABBD9C7946 /* YYCache.framework */; };
 		C1C30F8BCDBBA1D2C96C95665C051B13 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF08B32A1363B3DC8C929F15490270E /* YYKVStorage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C2336D60EDC6BAA4EDEDE8BDDB9D1F2A /* RACSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF9ACFA5AB4A232910EA03C2DA4E83 /* RACSequence.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C24E7840EA2444AA62B0A3F9BB87D92B /* UIImage+pRead.h in Headers */ = {isa = PBXBuildFile; fileRef = 429A5FA124AE019D6E975A1F8C9BB7BA /* UIImage+pRead.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C28A7653CB1331C8341A400214F8792E /* ReactiveObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A44389D56EAB0A6AA1210D34A9009E6 /* ReactiveObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2F58002A81C329689E844D614ACA608 /* RACScopedDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1465438EE36C747E4A2CE90708469C58 /* RACScopedDisposable.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C3BF926A8882F40C4C600E562FE995A0 /* RACScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = E119CEBCCF54452C9138099BDD363942 /* RACScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -278,7 +280,6 @@
 		C7697A2D6CD69AABC045E3F776AE190A /* NSString+pAtt.h in Headers */ = {isa = PBXBuildFile; fileRef = 2793C1F83DA3F163D1BC883D091C4790 /* NSString+pAtt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7D2CE2535FC88858321617A2838BC2C /* RACDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C8B38AFE57DEBE4FEDA6F3BD0ED885 /* RACDisposable.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C87C6449C5A35E0EF65B1F002F378CB9 /* NSInvocation+RACTypeParsing.h in Headers */ = {isa = PBXBuildFile; fileRef = F581D8AF92C98B77E9F26D1461D67E54 /* NSInvocation+RACTypeParsing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C89F3D746938E8CDCD4F457F6A488C24 /* UIImage+pRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F45F7D19571D86173D3114314F3ECA /* UIImage+pRead.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C8AB62B48E3963201B0C103F18E9F432 /* PoporDomainConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A507FAF049814A6001EAD228185781C0 /* PoporDomainConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C91D835BFA57702FE3984556752C2250 /* UIControl+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D7E4FBACDDF264E1E60AA0A0317B1 /* UIControl+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C98CD10C454285DE2C7F743C90D1E3A8 /* PoporDomainConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1748B06AD8FFFB3B8C5BA2850D4164A4 /* PoporDomainConfigVC.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -287,6 +288,7 @@
 		CD8283209B16CB736F693081B49CCA76 /* Block+pPrefix.h in Headers */ = {isa = PBXBuildFile; fileRef = D1DBA2E1E181D2D65E673FBFBF33BC82 /* Block+pPrefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDDDC5F0196625226FA754751CD855DB /* RACMulticastConnection+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9344A98AC9DFFFF6E8B7CC019C3F0EAE /* RACMulticastConnection+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CE93C54413259B4AC3683B6EB874D466 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB620A777676E3E0CA2BC6F374661DC /* UIKit.framework */; };
+		CF5C6CF79666A7CE3DE5A7348FDA610F /* UITextField+pFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1148075542ED81FA2F8F4ACF06BD1 /* UITextField+pFormat.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CFC0DE364E072FB0A0432DDEBC0E45A0 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BA117860D266298BAC7292C24409A0 /* NSLayoutConstraint+MASDebugAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CFEB7742F1A4A4A87AB74F8207609AC9 /* RACSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBDC3A593DE385CAADD728DD8F654F /* RACSubject.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D0161FE1BFF301B3EB20A95B9C566420 /* Pods-PoporDomainConfig_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F925B842975A99783D3B9219D461FCE3 /* Pods-PoporDomainConfig_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -296,30 +298,28 @@
 		D2AA8FAEA46F0C47F80F260078F95D34 /* NSString+pMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F0CFF639DA13EAC64B2EB11EC67110 /* NSString+pMD5.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D2F4BF9622151C3FF3AE745DEEDE5F43 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B8493EF679C90BF17E6D5186823075 /* Masonry.framework */; };
 		D4252A2A494CCE6AB418420730E7A66F /* PoporDomainConfigCC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C57BF6572314EF6CF63257307E6BC53 /* PoporDomainConfigCC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D45C676AFAF9DB3C91E6013C9CB34992 /* UIImage+pRead.h in Headers */ = {isa = PBXBuildFile; fileRef = 429A5FA124AE019D6E975A1F8C9BB7BA /* UIImage+pRead.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4D47C3E3B69D7BE49F60C88680390BB /* RACSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D7C635400D760D50B9DCC33D3F1E6 /* RACSubscriber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D52E272B6533FF6AEABC3C1E2DF9B409 /* NSString+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D70215CBFA72ED8DC9A6B9E9C8D024F /* NSString+RACSequenceAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D52FC2E1F2A72BC5695DF5623889B565 /* RACKVOChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5919BB6C8AC0B87BDC028E1A11EAEC8C /* RACKVOChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D53238A8095712A2C3F817D976D18219 /* UIImagePickerController+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = B4A7206C6E08DE4FA5820705AE2010FE /* UIImagePickerController+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D57512803CE92F6776B89BAC94B8CB17 /* UINavigationController+pSize.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7037E14EE457895C3F603799CC01F5 /* UINavigationController+pSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5DC067BC9616C3139B260BAF963AD33 /* UIViewController+pAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB3EEFEE919BF349C0CDA9DFEF7D8EB /* UIViewController+pAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5E2B81E9CB41B2F75BE67E90D5F1E13 /* RACTupleSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 5344308C5D0CA07F8B8CCAD4D90FB7C2 /* RACTupleSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D62D938F537BEBABFF332AAA5B0F9B3D /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CC6C1437CBAB70A85088EA65F4866A /* MASLayoutConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D6ED18F718E9513E318A8CE8B544F513 /* RACmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = C879AB1467934AA4FDAD4C7673A437FA /* RACmetamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D71EFE22BAB47347FE44DA5AB5151310 /* NSArray+pJsonDic.h in Headers */ = {isa = PBXBuildFile; fileRef = 156ACC9E6C36B1DC606306F229887D12 /* NSArray+pJsonDic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8A37A802EC59D91DC6B7B6B6FAE5E1F /* RACEXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = FFC9BDFAD25AB1770B889ADEBC68B883 /* RACEXTRuntimeExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D8F53190F25F4466459947F5475A4641 /* RACSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F73C1B21597FF2FCED7CC9562F5A0E6 /* RACSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D929E74F1140F911730FAF9909B5D600 /* UIViewController+pNcBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E805CB5E8D94A12DA62D1CD27AA984FE /* UIViewController+pNcBar.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D9A312555A67027F1284ABB81CE826F1 /* UIViewController+pTapEndEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = 749360C47D34883E3C17ABE55BC2F5BB /* UIViewController+pTapEndEdit.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DB8B05F4FFE5A18CFBE75D01E9585BE3 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DDBB24FDBAA90F669DAB965312B8C9D1 /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC564A2961D470CA8AE778DFAC8FDEF1 /* NSObject+RACSelectorSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 05DCE6ADA4098D3E5453E7ADF2EF23EA /* NSObject+RACSelectorSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCCD2C8B0D4F04FDF1F0FF950DD7E66A /* RACMulticastConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 9325358A30A9D1800B9674589E1BEF69 /* RACMulticastConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCE187890B5FFEBACBB6620333EDFB1F /* NSString+pIDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9726F614FA67033D1B987F7C8474F596 /* NSString+pIDCard.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DDD55BF506FA5D6A20A0AF37C56C9987 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E0F6EE165631E2397086F90B6CAAC4 /* Foundation.framework */; };
 		DEB3E55EACA395D76A739A01ED5BD976 /* RACValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CC61D48706364AAC0F942C8201A1EC11 /* RACValueTransformer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DEFE8B921A9C2F72691270A968A46C19 /* UIViewController+pLeeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = F786C56DBFB451EA55DAB31833D1BFBB /* UIViewController+pLeeBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF118E82A5F5A2E26909C37BE13AA15C /* PoporDomainConfigCC.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1EE24A7979737997A12D40FD1019F5 /* PoporDomainConfigCC.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E09D8F635696EC6C53A8D95B3F3E5CD5 /* RACTargetQueueScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 70A8E225D8AD32A27F1B8299E469C6BC /* RACTargetQueueScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1517311A838E025191916BB61AF9264 /* UIViewController+pTapEndEdit.h in Headers */ = {isa = PBXBuildFile; fileRef = 887FC1319E0FCAAE12FF723B71DF9D7D /* UIViewController+pTapEndEdit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2115AC6B5CBD80AC185107C28137210 /* RACEXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 910415BA757D756488D641FA4AF254F2 /* RACEXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E33FED52209C62FBFCA781594E84F1CC /* UINavigationController+pRemove.h in Headers */ = {isa = PBXBuildFile; fileRef = FFEF68C1E1207A2914E2C90017796B37 /* UINavigationController+pRemove.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3456367424E238C03699D51D3083B44 /* PoporFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2AD548F1C33CD53CC56B28FFC97B3D0 /* PoporFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3F450F615D27B85D33CC16F460EA3CF /* NSString+pTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 711B4107E2B5F56F50D7366740E50B52 /* NSString+pTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4592A5232C04056201D26281911A433 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E0F6EE165631E2397086F90B6CAAC4 /* Foundation.framework */; };
@@ -338,15 +338,15 @@
 		EE689AE8A95FB1E9B8AE6341CD5CD48A /* RACImmediateScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BA1F4457308FB5C5CF2000F569C6E0 /* RACImmediateScheduler.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F0BF6D606B727F93959E7870FD842B4F /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BE329119A5203AF91DC3D9E0B881F62E /* UITableViewHeaderFooterView+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F0E47E4368C30C93CFD7B43991B7E1A1 /* RACQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF287158D80095DAE78B765A4084A04 /* RACQueueScheduler.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F191806153A14729167B55E9ABC07852 /* UINavigationController+pSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 538953365C6254F1F8CD53EE61C3F769 /* UINavigationController+pSize.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F2417A24F2A7769D0CB0BB31CCE92A61 /* RACTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = FE028AD3C9023CE522C5D1C9F07C6D44 /* RACTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F29529D086BB7BA66F2F3BA359CD284F /* RACScheduler+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B1C6005BFDA64997D34AC08F47A7D588 /* RACScheduler+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F2F73DEEDAB282433705EABC96C9FDFB /* PoporUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9F2AD7746275E2DC699C4EFD2A683 /* PoporUI-dummy.m */; };
 		F39A932C30BF6D372B9DA9D816E96258 /* RACStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A9605F941BB93A5385824A3EA61251 /* RACStream.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F441255B04E000F302E269792796852F /* UISlider+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F758F873CA05451884E1A2E3D4F9C142 /* UISlider+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F46029C674F41C92BE075CD7D3962DC0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046272D55A88D6442F394133C7EBAD98 /* CoreFoundation.framework */; };
-		F501663EB179203D95686F2C26472480 /* UITextField+pPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = E273EDD136221D932859066DA4BB7925 /* UITextField+pPlaceholder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F5A102145DF46EEA165EFACBF8EE8B13 /* NSObject+pPerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B4A1B0C50C32A7918231D89859C464 /* NSObject+pPerformSelector.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F6AE05C891FC5B99B298B47BC7C302CE /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE624EC3779EE444325A8435F7BC174C /* YYModel-dummy.m */; };
+		F72B6ED30B7F2B77F26178E21E32AC0D /* PoporUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9F2AD7746275E2DC699C4EFD2A683 /* PoporUI-dummy.m */; };
 		F82C60E7A6D7EE0DD9932FCFD097206C /* RACUnarySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 56E83FCB8354E4EA0E29A9A4BBFD9406 /* RACUnarySequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9B0D49366E6CF50F903E5A3C668E46D /* NSObject+RACPropertySubscribing.m in Sources */ = {isa = PBXBuildFile; fileRef = C562A2D347F451329020F666160EC0EB /* NSObject+RACPropertySubscribing.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FA528209A7E932A083B7C9669446B185 /* UIActionSheet+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D090872806BCAE935779ECABB50AA8F4 /* UIActionSheet+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -482,7 +482,6 @@
 		0A014C4295AEEAE0AF3AE62DD5FA156E /* NSObject+RACKVOWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACKVOWrapper.h"; path = "ReactiveObjC/NSObject+RACKVOWrapper.h"; sourceTree = "<group>"; };
 		0A39838D75241664B99D6801C4826DF6 /* NSURLConnection+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLConnection+RACSupport.m"; path = "ReactiveObjC/NSURLConnection+RACSupport.m"; sourceTree = "<group>"; };
 		0A87963A110389173ADDAE9E347D5832 /* RACReplaySubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACReplaySubject.m; path = ReactiveObjC/RACReplaySubject.m; sourceTree = "<group>"; };
-		0B20A6EE25F74BABFE8C22B961CB0D9E /* IToastKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IToastKeyboard.h; path = PoporUI/Classes/IToast/IToastKeyboard.h; sourceTree = "<group>"; };
 		0C7E5E8FB22C30E1068666B8CA70893A /* PoporDomainConfigVCProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PoporDomainConfigVCProtocol.h; path = Example/Classes/PoporDomainConfig/PoporDomainConfigVCProtocol.h; sourceTree = "<group>"; };
 		0C935C77D38D0C65D29DEEBDB214742E /* RACEagerSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEagerSequence.m; path = ReactiveObjC/RACEagerSequence.m; sourceTree = "<group>"; };
 		0CE2A645400A089C4DEDE7A5A2CAC3D8 /* Pods-PoporDomainConfig_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporDomainConfig_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -508,7 +507,6 @@
 		18B1148075542ED81FA2F8F4ACF06BD1 /* UITextField+pFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+pFormat.m"; path = "PoporUI/Classes/UITextField/UITextField+pFormat.m"; sourceTree = "<group>"; };
 		18BBDC3A593DE385CAADD728DD8F654F /* RACSubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubject.m; path = ReactiveObjC/RACSubject.m; sourceTree = "<group>"; };
 		19F638E6EF4079B7054102335327CDD6 /* NSEnumerator+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEnumerator+RACSequenceAdditions.h"; path = "ReactiveObjC/NSEnumerator+RACSequenceAdditions.h"; sourceTree = "<group>"; };
-		1AE7A8B7FE0EF55DB4097B6D49B54B55 /* IToastKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IToastKeyboard.m; path = PoporUI/Classes/IToast/IToastKeyboard.m; sourceTree = "<group>"; };
 		1AF5BBE5D9EA95F04573B081250762B9 /* UITextField+pFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+pFormat.h"; path = "PoporUI/Classes/UITextField/UITextField+pFormat.h"; sourceTree = "<group>"; };
 		1B8FD6775584B5AB57C39C463E3E1F2B /* UIBarButtonItem+RACCommandSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+RACCommandSupport.h"; path = "ReactiveObjC/UIBarButtonItem+RACCommandSupport.h"; sourceTree = "<group>"; };
 		1BABD890938A18978959063FB127E4FE /* RACTestScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTestScheduler.m; path = ReactiveObjC/RACTestScheduler.m; sourceTree = "<group>"; };
@@ -529,7 +527,6 @@
 		24BCBB9D66F96277F51AF2D4D1B925A0 /* NSArray+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+RACSequenceAdditions.m"; path = "ReactiveObjC/NSArray+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		24D8903C300170C664F8CB42B2FD793F /* PoporFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PoporFoundation.xcconfig; sourceTree = "<group>"; };
 		255EEE6E06B674DD0BFC43BB0E0694CC /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
-		25B43ADEF4D7D2D3828A3E4FA638C40B /* IToast_Popor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IToast_Popor.h; path = PoporUI/Classes/IToast/IToast_Popor.h; sourceTree = "<group>"; };
 		25F1E716E37E58DA5460F5ABBD9C7946 /* YYCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2636C1115715AA6B01BF47DDAC36FF1B /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
 		26C30BFD76B16B049BF7580E9695D23D /* NSObject+RACDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACDescription.m"; path = "ReactiveObjC/NSObject+RACDescription.m"; sourceTree = "<group>"; };
@@ -539,6 +536,7 @@
 		2793C1F83DA3F163D1BC883D091C4790 /* NSString+pAtt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+pAtt.h"; path = "PoporFoundation/Classes/NSString/NSString+pAtt.h"; sourceTree = "<group>"; };
 		27D075DC2D66029AE4FA3C00B7D97326 /* RACEmptySignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEmptySignal.h; path = ReactiveObjC/RACEmptySignal.h; sourceTree = "<group>"; };
 		2803B81C1252C5E77054F59C10A51223 /* UIImage+pGradient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+pGradient.h"; path = "PoporUI/Classes/UIImage/UIImage+pGradient.h"; sourceTree = "<group>"; };
+		28F2388B2BE5E7CC19AA532EF6755109 /* IToastPTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IToastPTool.h; path = PoporUI/Classes/IToast/IToastPTool.h; sourceTree = "<group>"; };
 		2A44389D56EAB0A6AA1210D34A9009E6 /* ReactiveObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveObjC-umbrella.h"; sourceTree = "<group>"; };
 		2B28FF92D52BB87D65625C399764C45E /* NSObject+pPerformSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+pPerformSelector.h"; path = "PoporFoundation/Classes/NSObject/NSObject+pPerformSelector.h"; sourceTree = "<group>"; };
 		2B79AEF645DAD35D7731881D113224CD /* RACQueueScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACQueueScheduler.h; path = ReactiveObjC/RACQueueScheduler.h; sourceTree = "<group>"; };
@@ -625,6 +623,7 @@
 		61544E6A01E24DCF5B41AD5C64CB7E4D /* NSObject+RACDeallocating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACDeallocating.h"; path = "ReactiveObjC/NSObject+RACDeallocating.h"; sourceTree = "<group>"; };
 		628B6475FB9CE90B254274DD8B4345D2 /* Pods_PoporDomainConfig_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PoporDomainConfig_Example.framework; path = "Pods-PoporDomainConfig_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CAF492B0451D4174E9A2428EEAAE63 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		63689FF31AC2AD410CB472F6BA0AD0EC /* IToast_Popor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IToast_Popor.h; path = PoporUI/Classes/IToast/IToast_Popor.h; sourceTree = "<group>"; };
 		64939F6AEF66484299FE7AB658C2A243 /* RACPassthroughSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACPassthroughSubscriber.h; path = ReactiveObjC/RACPassthroughSubscriber.h; sourceTree = "<group>"; };
 		65739B29905D13E78E65CFBA384E81B8 /* UIImage+pCreate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+pCreate.m"; path = "PoporUI/Classes/UIImage/UIImage+pCreate.m"; sourceTree = "<group>"; };
 		663A46ED5FE44B8EE6EBC7020E353688 /* NSObject+RACKVOWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACKVOWrapper.m"; path = "ReactiveObjC/NSObject+RACKVOWrapper.m"; sourceTree = "<group>"; };
@@ -722,6 +721,7 @@
 		A1532D235B43C1AFB7122D4277942620 /* UITextField+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+RACSignalSupport.m"; path = "ReactiveObjC/UITextField+RACSignalSupport.m"; sourceTree = "<group>"; };
 		A21A85542E9F56A92466E60634AE15BE /* UIButton+RACCommandSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+RACCommandSupport.h"; path = "ReactiveObjC/UIButton+RACCommandSupport.h"; sourceTree = "<group>"; };
 		A2450BD0BE618893CFF4D2B1293F9CEB /* ReactiveObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33820CBB5CD679FCC4440259C5E17CE /* IToastPTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IToastPTool.m; path = PoporUI/Classes/IToast/IToastPTool.m; sourceTree = "<group>"; };
 		A47BFF97C8B08CD3AB90F345E1B195DD /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
 		A507FAF049814A6001EAD228185781C0 /* PoporDomainConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PoporDomainConfig.h; path = Example/Classes/PoporDomainConfig/PoporDomainConfig.h; sourceTree = "<group>"; };
 		A59CD478F09AE2C0581CC7ACD276EA07 /* UITextField+pTextRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+pTextRange.h"; path = "PoporUI/Classes/UITextField/UITextField+pTextRange.h"; sourceTree = "<group>"; };
@@ -734,7 +734,6 @@
 		AC7037E14EE457895C3F603799CC01F5 /* UINavigationController+pSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+pSize.h"; path = "PoporUI/Classes/UINavigationController/UINavigationController+pSize.h"; sourceTree = "<group>"; };
 		AD69E698C75A2A3E123BBDCB806D78CF /* Pods-PoporDomainConfig_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporDomainConfig_Tests-Info.plist"; sourceTree = "<group>"; };
 		ADEB85751535892FCDECB50A5D07B0B5 /* UITextView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+RACSignalSupport.m"; path = "ReactiveObjC/UITextView+RACSignalSupport.m"; sourceTree = "<group>"; };
-		AE4B20FCB463C82FBF2A53C454A67279 /* IToast_Popor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IToast_Popor.m; path = PoporUI/Classes/IToast/IToast_Popor.m; sourceTree = "<group>"; };
 		AE58C6AD02FA108FC6EA20CB467514DA /* UIGestureRecognizer+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+RACSignalSupport.h"; path = "ReactiveObjC/UIGestureRecognizer+RACSignalSupport.h"; sourceTree = "<group>"; };
 		AEE28406B774132A7618CA9EE98C6DE9 /* RACMulticastConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACMulticastConnection.m; path = ReactiveObjC/RACMulticastConnection.m; sourceTree = "<group>"; };
 		AEF82F0245904436EB3B93D528B3FF1E /* RACCompoundDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCompoundDisposable.m; path = ReactiveObjC/RACCompoundDisposable.m; sourceTree = "<group>"; };
@@ -835,6 +834,7 @@
 		E759FC60B66FB63AC029B36DE306B95C /* Os+pPrefix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Os+pPrefix.h"; path = "PoporFoundation/Classes/Os/Os+pPrefix.h"; sourceTree = "<group>"; };
 		E79CADB16C57D83957EDA533599B319A /* UITextField+pInsets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+pInsets.m"; path = "PoporUI/Classes/UITextField/UITextField+pInsets.m"; sourceTree = "<group>"; };
 		E805CB5E8D94A12DA62D1CD27AA984FE /* UIViewController+pNcBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+pNcBar.m"; path = "PoporUI/Classes/UIViewController/UIViewController+pNcBar.m"; sourceTree = "<group>"; };
+		E9152E4F7AFF9901C9B4AD006D2F1C86 /* IToast_Popor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IToast_Popor.m; path = PoporUI/Classes/IToast/IToast_Popor.m; sourceTree = "<group>"; };
 		E9F0496A6FBECE9FEDF3F48BAB907DF8 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		EA87E66320F055255D93CFBE7BC19EB6 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		F198A1EFBC3963D099A2632A9DEC2FA1 /* NSArray+pSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+pSwizzling.h"; path = "PoporFoundation/Classes/NSArray/NSArray+pSwizzling.h"; sourceTree = "<group>"; };
@@ -1005,17 +1005,6 @@
 				3BC0DCE0B834E204EC0E1F523C13C81F /* UIImage+pTool.m */,
 			);
 			name = UIImage;
-			sourceTree = "<group>";
-		};
-		62CC6963C40038B36B2550CBA875B226 /* IToast */ = {
-			isa = PBXGroup;
-			children = (
-				25B43ADEF4D7D2D3828A3E4FA638C40B /* IToast_Popor.h */,
-				AE4B20FCB463C82FBF2A53C454A67279 /* IToast_Popor.m */,
-				0B20A6EE25F74BABFE8C22B961CB0D9E /* IToastKeyboard.h */,
-				1AE7A8B7FE0EF55DB4097B6D49B54B55 /* IToastKeyboard.m */,
-			);
-			name = IToast;
 			sourceTree = "<group>";
 		};
 		65670C2714C72CBBB879B386DC3DEF54 /* Frameworks */ = {
@@ -1226,7 +1215,7 @@
 		A714D9E777B922DB9ACD5CCA91480BD0 /* PoporUI */ = {
 			isa = PBXGroup;
 			children = (
-				62CC6963C40038B36B2550CBA875B226 /* IToast */,
+				AB27D551239CAB2B5F15BEA977A7638B /* IToast */,
 				BA24FEEF2A1CD955F68CEDA7A4DB4B93 /* Support Files */,
 				52780A19A6CA367013E5202B35857FCC /* UIImage */,
 				7CBE397A618D8DD53556FBBD56A3E082 /* UINavigationController */,
@@ -1244,6 +1233,17 @@
 				C72AC0515E62D5485E27129ACA58262C /* Pods-PoporDomainConfig_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AB27D551239CAB2B5F15BEA977A7638B /* IToast */ = {
+			isa = PBXGroup;
+			children = (
+				63689FF31AC2AD410CB472F6BA0AD0EC /* IToast_Popor.h */,
+				E9152E4F7AFF9901C9B4AD006D2F1C86 /* IToast_Popor.m */,
+				28F2388B2BE5E7CC19AA532EF6755109 /* IToastPTool.h */,
+				A33820CBB5CD679FCC4440259C5E17CE /* IToastPTool.m */,
+			);
+			name = IToast;
 			sourceTree = "<group>";
 		};
 		B1311C888E49DAC6C1040E2ED3785167 /* Prefix */ = {
@@ -1626,6 +1626,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		46489ABEB106823FB05E1E6259DABEB7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CED70B28FD52803D02C33D0065105E2 /* IToast_Popor.h in Headers */,
+				23AAC181F4CC98A8D89B4B5B4124C303 /* IToastPTool.h in Headers */,
+				A264EE7CD77012171C465FDDE321A57D /* PoporUI-umbrella.h in Headers */,
+				AC83403FA1C967D4A46733684B79422E /* UIImage+pCreate.h in Headers */,
+				19AA4AE1EEAEBB231C0214F9700C8937 /* UIImage+pGradient.h in Headers */,
+				C24E7840EA2444AA62B0A3F9BB87D92B /* UIImage+pRead.h in Headers */,
+				370A4C7CAECA3E0F24253FC06A4997F8 /* UIImage+pSave.h in Headers */,
+				7B1D47F0E63893E2B3D9F5F5A0844BD3 /* UIImage+pTool.h in Headers */,
+				E33FED52209C62FBFCA781594E84F1CC /* UINavigationController+pRemove.h in Headers */,
+				9F47302EE8305D78FD67EAD0542ADA5A /* UINavigationController+pSize.h in Headers */,
+				308ABCA28307EEDC3EAAE08E8563A319 /* UITextField+pFormat.h in Headers */,
+				84CE056B22AC8B33C78DE05BCA9B480F /* UITextField+pInsets.h in Headers */,
+				12D2EFD8BEA8BE4952ACEEC7615F64AE /* UITextField+pMaxLength.h in Headers */,
+				A62B311BF4F39A80FEA86500AF92AF72 /* UITextField+pPlaceholder.h in Headers */,
+				A608939CDFAF063BBBBF0EE179029533 /* UITextField+pTextRange.h in Headers */,
+				5CF3FA4B561CB6107E06D3C99033E9F3 /* UIViewController+pAC.h in Headers */,
+				DEFE8B921A9C2F72691270A968A46C19 /* UIViewController+pLeeBase.h in Headers */,
+				5F3E0018A9EB707EE8335A58A6824D2B /* UIViewController+pNcBar.h in Headers */,
+				A338763737029DEC7D26967B43C3C3C1 /* UIViewController+pTapEndEdit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CA6E98B3A9AB4D5F559E9DD47AF0753 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1638,32 +1664,6 @@
 				37B75FBE08A76BF5764F6D52B2A9EB32 /* PoporDomainConfigVCInteractor.h in Headers */,
 				60440F93201A54E8FD808FC59EC35535 /* PoporDomainConfigVCPresenter.h in Headers */,
 				AFA58D19ECCC9CB15B3D5E2EAD816A32 /* PoporDomainConfigVCProtocol.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		62EC38BEA989169949C3D879DE2F6651 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3924E6317E3B1473D594C6599CB28B2E /* IToast_Popor.h in Headers */,
-				6181952519C39877FEED823274704074 /* IToastKeyboard.h in Headers */,
-				61B784AD3C5B171F3FFDB561973B4BD9 /* PoporUI-umbrella.h in Headers */,
-				A66F3A3F7EF2E8E3E56C26AC79782611 /* UIImage+pCreate.h in Headers */,
-				1C50837E0A14343743123ED2F8D96C62 /* UIImage+pGradient.h in Headers */,
-				D45C676AFAF9DB3C91E6013C9CB34992 /* UIImage+pRead.h in Headers */,
-				05B0385A7CFCED44EDE5DD21FB4A9DD3 /* UIImage+pSave.h in Headers */,
-				2B163255BC7BA4E884BB75560E082C78 /* UIImage+pTool.h in Headers */,
-				B212FB72887395E6868F644ACB409726 /* UINavigationController+pRemove.h in Headers */,
-				D57512803CE92F6776B89BAC94B8CB17 /* UINavigationController+pSize.h in Headers */,
-				B45613754965384C6ACFB275A1116335 /* UITextField+pFormat.h in Headers */,
-				14B96AD36F24A9E8B36B71DC506F6ECE /* UITextField+pInsets.h in Headers */,
-				A3030FEE94C05DD41537FBECA00522A0 /* UITextField+pMaxLength.h in Headers */,
-				73F9AFDD1145A48B3C7059415F497482 /* UITextField+pPlaceholder.h in Headers */,
-				82D0F70F1E1C807DE938E2B8F15B917E /* UITextField+pTextRange.h in Headers */,
-				D5DC067BC9616C3139B260BAF963AD33 /* UIViewController+pAC.h in Headers */,
-				14B7EC67AA20F0BC1A23C5730EB47431 /* UIViewController+pLeeBase.h in Headers */,
-				3BA579D1E78BF51779FA8058487A0F22 /* UIViewController+pNcBar.h in Headers */,
-				E1517311A838E025191916BB61AF9264 /* UIViewController+pTapEndEdit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1930,8 +1930,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ECEE6FC46268ACA3368F3C1A740BDBF /* Build configuration list for PBXNativeTarget "PoporUI" */;
 			buildPhases = (
-				62EC38BEA989169949C3D879DE2F6651 /* Headers */,
-				45FA13780EFCCFCE617FC0415EA806C1 /* Sources */,
+				46489ABEB106823FB05E1E6259DABEB7 /* Headers */,
+				DF42545EB508D07FE28C336FEFDA4BF9 /* Sources */,
 				5B72B43F4A58AA95F4E036F7E371BBF7 /* Frameworks */,
 				67A4E715CCE03E55DFFB57CBB71E810E /* Resources */,
 			);
@@ -2242,32 +2242,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45FA13780EFCCFCE617FC0415EA806C1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D2D14BA04026963BD8DE790AD8B8EFC /* IToast_Popor.m in Sources */,
-				7FFD2D9A2BAB4DDAD8BC452D9C4BB730 /* IToastKeyboard.m in Sources */,
-				F2F73DEEDAB282433705EABC96C9FDFB /* PoporUI-dummy.m in Sources */,
-				8EA19D1A8472ED94CACAD5B834FD1BD2 /* UIImage+pCreate.m in Sources */,
-				55EA41005723F821E5194166A8BB2D69 /* UIImage+pGradient.m in Sources */,
-				C89F3D746938E8CDCD4F457F6A488C24 /* UIImage+pRead.m in Sources */,
-				2E39983C047CE46D744D86F868B085CE /* UIImage+pSave.m in Sources */,
-				6CB7845CCB2EFCCB06D4ACD59886089E /* UIImage+pTool.m in Sources */,
-				74AA331C643170DA3374A0F105DC0D17 /* UINavigationController+pRemove.m in Sources */,
-				1F0AA4849ACE4008654376D250ED0C42 /* UINavigationController+pSize.m in Sources */,
-				8D5BA63135F5992E62ACAD68A89194D0 /* UITextField+pFormat.m in Sources */,
-				3098F92EC4066EF26C3698D5837CD1A5 /* UITextField+pInsets.m in Sources */,
-				59083BE5102D19E9785C38D7D2502D10 /* UITextField+pMaxLength.m in Sources */,
-				F501663EB179203D95686F2C26472480 /* UITextField+pPlaceholder.m in Sources */,
-				2B8A9D87769F35120D442973C754DD2C /* UITextField+pTextRange.m in Sources */,
-				5831633737FA7A5259794385701F7B69 /* UIViewController+pAC.m in Sources */,
-				16C3C17749774E01955E71334144BE45 /* UIViewController+pLeeBase.m in Sources */,
-				D929E74F1140F911730FAF9909B5D600 /* UIViewController+pNcBar.m in Sources */,
-				C0623D91CE7EEF6A927611EC955C9947 /* UIViewController+pTapEndEdit.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		82549BBE1FCB6706262820FA57F58432 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2330,6 +2304,32 @@
 				C98CD10C454285DE2C7F743C90D1E3A8 /* PoporDomainConfigVC.m in Sources */,
 				1783E4F2C1B18875779118157A3F7368 /* PoporDomainConfigVCInteractor.m in Sources */,
 				396DE266A3927C11A8EA493CE7B45AAD /* PoporDomainConfigVCPresenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF42545EB508D07FE28C336FEFDA4BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330DE6C664992FA1910134FF059BEAC9 /* IToast_Popor.m in Sources */,
+				69F2F6A2377FB010696167EC180C228B /* IToastPTool.m in Sources */,
+				F72B6ED30B7F2B77F26178E21E32AC0D /* PoporUI-dummy.m in Sources */,
+				80B3E102ADF25705A153E02F998672C2 /* UIImage+pCreate.m in Sources */,
+				08630C69B1E3C11885AF1FFAA736066B /* UIImage+pGradient.m in Sources */,
+				69D1FB87F993EDB3E8195BDE087AC07E /* UIImage+pRead.m in Sources */,
+				B6DF1D5C8E5A007CD30DB52DD072AA90 /* UIImage+pSave.m in Sources */,
+				9E2FFB6EF09DCAFB7B677A0EA0F0E28C /* UIImage+pTool.m in Sources */,
+				0C30F767DFD13743E58FC2FCFD098E8C /* UINavigationController+pRemove.m in Sources */,
+				F191806153A14729167B55E9ABC07852 /* UINavigationController+pSize.m in Sources */,
+				CF5C6CF79666A7CE3DE5A7348FDA610F /* UITextField+pFormat.m in Sources */,
+				A6A0E10AA12431419E00A11DBB1D67C6 /* UITextField+pInsets.m in Sources */,
+				9E7990EF8B9F8B886BE96CA8EEE46662 /* UITextField+pMaxLength.m in Sources */,
+				06276755700BDE7F79FD30DD21BB12C5 /* UITextField+pPlaceholder.m in Sources */,
+				77471AEE39894B018072F10E19D6E22E /* UITextField+pTextRange.m in Sources */,
+				34D4BBE1EE2CE8F4F8AA1133AA1F41BF /* UIViewController+pAC.m in Sources */,
+				0E800651487D163E91FAE792BCB28079 /* UIViewController+pLeeBase.m in Sources */,
+				4DA018CA94D3992FC17C8A2F737AB4EB /* UIViewController+pNcBar.m in Sources */,
+				D9A312555A67027F1284ABB81CE826F1 /* UIViewController+pTapEndEdit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
