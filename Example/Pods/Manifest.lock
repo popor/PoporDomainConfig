@@ -1,7 +1,7 @@
 PODS:
   - JSONModel (1.8.0)
   - Masonry (1.1.0)
-  - PoporDomainConfig (1.04):
+  - PoporDomainConfig (1.05):
     - Masonry
     - PoporFoundation/Prefix
     - PoporJsonModel
@@ -62,7 +62,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  PoporDomainConfig: 924a26695229381d284f6dbeba9aac3c629ec408
+  PoporDomainConfig: 53322e46d4fe1988148c229f5104b2f3c11c9f31
   PoporFoundation: f080da19da868487426639289bd3a263a7c65aea
   PoporJsonModel: 21862caa2de147fb5c08230935ac411c8a2185ad
   PoporUI: 3479332df777422196b57bf6c46c431d087df8da

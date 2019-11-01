@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSMutableArray<PoporDomainConfigListEntity *> * netArray;
 @property (nonatomic, strong) NSString * defaultInfo;
 
+// 点击新的域名选项、新增、删除的回调
+@property (nonatomic, copy  ) BlockPVoid blockUpdateDomain;
+
 + (instancetype)share;
 
 // 假如数组个数 <= 1,将隐藏infoCV.

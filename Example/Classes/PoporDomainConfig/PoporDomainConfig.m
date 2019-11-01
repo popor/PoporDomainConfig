@@ -147,6 +147,10 @@ static NSString * SaveKey = @"config";
 + (void)updateDomain {
     PoporDomainConfig * config = [PoporDomainConfig share];
     [config.yyDiskCache setObject:config.netArray forKey:SaveKey];
+    
+    if (config.blockUpdateDomain) {
+        config.blockUpdateDomain();
+    }
 }
 
 @end
