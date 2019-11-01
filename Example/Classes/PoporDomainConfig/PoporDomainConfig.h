@@ -15,8 +15,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PoporDomainConfig : NSObject
+/*
+ 目前只针对一个页面的情形, 多情形的还没遇到.
+ */
 
-// 一般推荐使用该数组
 @property (nonatomic, strong) NSMutableArray<PoporDomainConfigListEntity *> * netArray;
 @property (nonatomic, strong) NSString * defaultInfo;
 
