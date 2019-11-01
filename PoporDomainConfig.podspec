@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PoporDomainConfig'
-  s.version          = '1.03'
+  s.version          = '1.04'
   s.summary          = '简易的域名配置工具,方便开发测试.'
 
   s.homepage         = 'https://github.com/popor/PoporDomainConfig'
@@ -31,5 +31,6 @@ Pod::Spec.new do |s|
   s.dependency 'PoporUI/UIViewController'
   s.dependency 'PoporUI/UINavigationController'
   s.dependency 'PoporUI/IToast'
+  s.dependency 'PoporJsonModel'
   
 end

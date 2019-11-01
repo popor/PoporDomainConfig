@@ -7,6 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+
+// 为了方便第三方实用,将PoporDomainConfigEntity、PoporDomainConfigListEntity的继承改为PoporJsonModel。
+
+#import <PoporJsonModel/PoporJsonModel.h>
 #import <YYModel/YYModel.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -14,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define PoporDCE(title, domain) [[PoporDomainConfigEntity alloc] initTitle:title withDomain:domain]
 
 @protocol PoporDomainConfigEntity;
-@interface PoporDomainConfigEntity : NSObject
+@interface PoporDomainConfigEntity : PoporJsonModel
 
 @property (nonatomic, strong, nullable) NSString * title;
 @property (nonatomic, strong) NSString * domain;
@@ -23,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface PoporDomainConfigListEntity : NSObject
+@interface PoporDomainConfigListEntity : PoporJsonModel
 
 @property (nonatomic, strong) NSString  * title; // 更改名字之后,将全部更新.
 @property (nonatomic, strong) NSString  * domain;// 当前选择的域名

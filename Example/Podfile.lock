@@ -1,8 +1,10 @@
 PODS:
+  - JSONModel (1.8.0)
   - Masonry (1.1.0)
-  - PoporDomainConfig (1.03):
+  - PoporDomainConfig (1.04):
     - Masonry
     - PoporFoundation/Prefix
+    - PoporJsonModel
     - PoporUI/IToast
     - PoporUI/UIImage
     - PoporUI/UINavigationController
@@ -20,6 +22,9 @@ PODS:
   - PoporFoundation/Os (1.09)
   - PoporFoundation/Prefix (1.09):
     - PoporFoundation/Os
+  - PoporJsonModel (0.03):
+    - JSONModel
+    - PoporFoundation/NSObject
   - PoporUI/IToast (1.10):
     - PoporFoundation/NSString
   - PoporUI/UIImage (1.10)
@@ -41,8 +46,10 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - JSONModel
     - Masonry
     - PoporFoundation
+    - PoporJsonModel
     - PoporUI
     - ReactiveObjC
     - YYCache
@@ -53,9 +60,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  PoporDomainConfig: c29de6a53aa12509e3660ab070c566462e877dbe
+  PoporDomainConfig: 924a26695229381d284f6dbeba9aac3c629ec408
   PoporFoundation: f080da19da868487426639289bd3a263a7c65aea
+  PoporJsonModel: 21862caa2de147fb5c08230935ac411c8a2185ad
   PoporUI: 3479332df777422196b57bf6c46c431d087df8da
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952

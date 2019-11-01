@@ -161,18 +161,22 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PoporDomainConfig/PoporDomainConfig.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PoporFoundation/PoporFoundation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PoporJsonModel/PoporJsonModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PoporUI/PoporUI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PoporDomainConfig/PoporDomainConfig.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PoporFoundation/PoporFoundation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PoporJsonModel/PoporJsonModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PoporUI/PoporUI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework"
