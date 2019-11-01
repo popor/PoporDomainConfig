@@ -43,6 +43,11 @@
         UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@"域名配置" style:UIBarButtonItemStylePlain target:self action:@selector(action1)];
         self.navigationItem.rightBarButtonItems = @[item1];
     }
+    {
+        UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@"输出测试" style:UIBarButtonItemStylePlain target:self action:@selector(showList)];
+        // [item1 setTitleTextAttributes:@{NSFontAttributeName:Font16} forState:UIControlStateNormal];
+        self.navigationItem.leftBarButtonItems = @[item1];
+    }
 }
 
 - (PoporDomainConfigListEntity *)getBaiduEntity {
@@ -93,6 +98,14 @@
             
             };
     [self.navigationController pushViewController:[[PoporDomainConfigVC alloc] initWithDic:dic] animated:YES];
+}
+
+- (void)showList {
+    PoporDomainConfig * config = [PoporDomainConfig share];
+    for (PoporDomainConfigListEntity * le in config.netArray) {
+        NSLog(@"le.title : %@, le.domain : %@", le.title, le.domain);
+        
+    }
 }
 
 @end
