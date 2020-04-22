@@ -1,7 +1,7 @@
 PODS:
   - JSONModel (1.8.0)
   - Masonry (1.1.0)
-  - PoporDomainConfig (1.05):
+  - PoporDomainConfig (1.06):
     - Masonry
     - PoporFoundation/Prefix
     - PoporJsonModel
@@ -13,26 +13,28 @@ PODS:
     - ReactiveObjC
     - YYCache
     - YYModel
-  - PoporFoundation/NSArray (1.09):
+  - PoporFoundation/NSArray (1.14):
     - PoporFoundation/NSObject
     - PoporFoundation/Prefix
-  - PoporFoundation/NSObject (1.09)
-  - PoporFoundation/NSString (1.09):
+  - PoporFoundation/NSObject (1.14)
+  - PoporFoundation/NSString (1.14):
+    - PoporFoundation/NSObject
     - PoporFoundation/Os
-  - PoporFoundation/Os (1.09)
-  - PoporFoundation/Prefix (1.09):
+    - PoporFoundation/Prefix
+  - PoporFoundation/Os (1.14)
+  - PoporFoundation/Prefix (1.14):
     - PoporFoundation/Os
-  - PoporJsonModel (0.03):
+  - PoporJsonModel (0.04):
     - JSONModel
     - PoporFoundation/NSObject
-  - PoporUI/IToast (1.10):
+  - PoporUI/IToast (1.14):
     - PoporFoundation/NSString
-  - PoporUI/UIImage (1.10)
-  - PoporUI/UINavigationController (1.10)
-  - PoporUI/UITextField (1.10):
+  - PoporUI/UIImage (1.14)
+  - PoporUI/UINavigationController (1.14)
+  - PoporUI/UITextField (1.14):
     - PoporFoundation/NSObject
     - PoporFoundation/NSString
-  - PoporUI/UIViewController (1.10):
+  - PoporUI/UIViewController (1.14):
     - PoporFoundation/NSObject
     - PoporFoundation/NSString
     - PoporFoundation/Prefix
@@ -45,7 +47,7 @@ DEPENDENCIES:
   - PoporFoundation/NSArray
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - JSONModel
     - Masonry
     - PoporFoundation
@@ -62,14 +64,14 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  PoporDomainConfig: 53322e46d4fe1988148c229f5104b2f3c11c9f31
-  PoporFoundation: f080da19da868487426639289bd3a263a7c65aea
-  PoporJsonModel: 21862caa2de147fb5c08230935ac411c8a2185ad
-  PoporUI: 3479332df777422196b57bf6c46c431d087df8da
+  PoporDomainConfig: 8d3187941a60af04ec9c419df4a4214ec7d50693
+  PoporFoundation: 25f70450a23ad082beec1458185e993c16172ea4
+  PoporJsonModel: e99396194a9b629907e14a134fe01677ed14b560
+  PoporUI: 7c49a04cabefe2d017afbb73117b3c82f50bf6ac
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 28ba66444fac8d9da871f59a661ad1f9c6293616
+PODFILE CHECKSUM: f8a52ea89083256705cd5d0537c7376ba2085b16
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.0

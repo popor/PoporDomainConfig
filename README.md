@@ -20,6 +20,8 @@ it, simply add the following line to your Podfile:
 pod 'PoporDomainConfig'
 ```
 
+1.06 更新依赖pod
+
 ## Author
 
 popor, 908891024@qq.com
