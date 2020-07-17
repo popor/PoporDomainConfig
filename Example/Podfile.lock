@@ -7,7 +7,6 @@ PODS:
     - PoporJsonModel
     - PoporUI/IToast
     - PoporUI/UIImage
-    - PoporUI/UINavigationController
     - PoporUI/UITextField
     - PoporUI/UIViewController
     - ReactiveObjC
@@ -30,7 +29,6 @@ PODS:
   - PoporUI/IToast (1.14):
     - PoporFoundation/NSString
   - PoporUI/UIImage (1.14)
-  - PoporUI/UINavigationController (1.14)
   - PoporUI/UITextField (1.14):
     - PoporFoundation/NSObject
     - PoporFoundation/NSString
@@ -64,7 +62,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  PoporDomainConfig: 8d3187941a60af04ec9c419df4a4214ec7d50693
+  PoporDomainConfig: 458e3357d8127e8cde5f7f84b5b4647f121c1991
   PoporFoundation: 25f70450a23ad082beec1458185e993c16172ea4
   PoporJsonModel: e99396194a9b629907e14a134fe01677ed14b560
   PoporUI: 7c49a04cabefe2d017afbb73117b3c82f50bf6ac
@@ -74,4 +72,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: f8a52ea89083256705cd5d0537c7376ba2085b16
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.9.3

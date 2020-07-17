@@ -14,7 +14,6 @@
 
 #import <PoporUI/UIViewController+pTapEndEdit.h>
 #import <PoporUI/UIImage+pCreate.h>
-#import <PoporUI/UINavigationController+pSize.h>
 #import <Masonry/Masonry.h>
 
 @interface PoporDomainConfigVC ()
@@ -260,7 +259,7 @@
     
     [cv mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(PoporDomainConfigVCXGap);
-        make.top.mas_equalTo(self.navigationController.barHeight+10);
+        make.top.mas_equalTo(10);
         
         make.right.mas_equalTo(-PoporDomainConfigVCXGap);
         

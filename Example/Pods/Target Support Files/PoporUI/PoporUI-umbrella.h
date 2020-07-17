@@ -17,8 +17,6 @@
 #import "UIImage+pRead.h"
 #import "UIImage+pSave.h"
 #import "UIImage+pTool.h"
-#import "UINavigationController+pRemove.h"
-#import "UINavigationController+pSize.h"
 #import "UITextField+pFormat.h"
 #import "UITextField+pInsets.h"
 #import "UITextField+pMaxLength.h"

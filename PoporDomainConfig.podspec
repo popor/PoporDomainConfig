@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.dependency 'PoporUI/UIImage'
   s.dependency 'PoporUI/UITextField'
   s.dependency 'PoporUI/UIViewController'
-  s.dependency 'PoporUI/UINavigationController'
+  #s.dependency 'PoporUI/UINavigationController'
   s.dependency 'PoporUI/IToast'
   #  s.dependency 'PoporUI', '1.14'
   s.dependency 'PoporJsonModel'
