@@ -12,7 +12,9 @@
 
 #import "IToastPTool.h"
 #import "IToast_Popor.h"
+#import "UIImage+pColorAtPixel.h"
 #import "UIImage+pCreate.h"
+#import "UIImage+pEffects.h"
 #import "UIImage+pGradient.h"
 #import "UIImage+pRead.h"
 #import "UIImage+pSave.h"

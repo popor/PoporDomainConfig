@@ -1,7 +1,7 @@
 PODS:
   - JSONModel (1.8.0)
   - Masonry (1.1.0)
-  - PoporDomainConfig (1.06):
+  - PoporDomainConfig (1.07):
     - Masonry
     - PoporFoundation/Prefix
     - PoporJsonModel
@@ -12,27 +12,27 @@ PODS:
     - ReactiveObjC
     - YYCache
     - YYModel
-  - PoporFoundation/NSArray (1.14):
+  - PoporFoundation/NSArray (1.21):
     - PoporFoundation/NSObject
     - PoporFoundation/Prefix
-  - PoporFoundation/NSObject (1.14)
-  - PoporFoundation/NSString (1.14):
+  - PoporFoundation/NSObject (1.21)
+  - PoporFoundation/NSString (1.21):
     - PoporFoundation/NSObject
     - PoporFoundation/Os
     - PoporFoundation/Prefix
-  - PoporFoundation/Os (1.14)
-  - PoporFoundation/Prefix (1.14):
+  - PoporFoundation/Os (1.21)
+  - PoporFoundation/Prefix (1.21):
     - PoporFoundation/Os
   - PoporJsonModel (0.04):
     - JSONModel
     - PoporFoundation/NSObject
-  - PoporUI/IToast (1.14):
+  - PoporUI/IToast (1.20):
     - PoporFoundation/NSString
-  - PoporUI/UIImage (1.14)
-  - PoporUI/UITextField (1.14):
+  - PoporUI/UIImage (1.20)
+  - PoporUI/UITextField (1.20):
     - PoporFoundation/NSObject
     - PoporFoundation/NSString
-  - PoporUI/UIViewController (1.14):
+  - PoporUI/UIViewController (1.20):
     - PoporFoundation/NSObject
     - PoporFoundation/NSString
     - PoporFoundation/Prefix
@@ -45,7 +45,7 @@ DEPENDENCIES:
   - PoporFoundation/NSArray
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - JSONModel
     - Masonry
     - PoporFoundation
@@ -62,14 +62,14 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  PoporDomainConfig: 458e3357d8127e8cde5f7f84b5b4647f121c1991
-  PoporFoundation: 25f70450a23ad082beec1458185e993c16172ea4
+  PoporDomainConfig: 1a660e0dd269354f096cae490f2d76fd05fa27bc
+  PoporFoundation: dc0999db26642dd31bde8629dd641da498713d36
   PoporJsonModel: e99396194a9b629907e14a134fe01677ed14b560
-  PoporUI: 7c49a04cabefe2d017afbb73117b3c82f50bf6ac
+  PoporUI: 6e2d89bbf7c6251f796a6ef8734bbfb22342122b
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: f8a52ea89083256705cd5d0537c7376ba2085b16
+PODFILE CHECKSUM: 4d19145da18a371952ca3797c3bc84d7d1bd3253
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0.beta.2

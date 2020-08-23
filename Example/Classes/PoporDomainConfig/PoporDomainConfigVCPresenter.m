@@ -12,7 +12,7 @@
 #import "PoporDomainConfigCC.h"
 
 #import <PoporFoundation/NSString+pSize.h>
-#import <PoporFoundation/NSString+pAtt.h>
+#import <PoporFoundation/NSMutableAttributedString+pAtt.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 
 #import <PoporUI/IToastPTool.h>

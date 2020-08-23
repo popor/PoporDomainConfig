@@ -20,6 +20,8 @@
 
 @property (nonatomic, strong) PoporDomainConfigVCPresenter * present;
 
+@property (nonatomic, strong) UILabel * infoL;
+
 @end
 
 @implementation PoporDomainConfigVC
@@ -87,13 +89,92 @@
 
 - (void)addViews {
     self.infoCV = [self addCV];
+    [self addInfo];
     
+    self.infoTV = [self addTVs];
+    [self.infoTV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(0);
+        make.top.mas_equalTo(self.infoL.mas_bottom).mas_offset(20);
+        make.right.mas_equalTo(0);
+        make.bottom.mas_equalTo(0);
+    }];
+
+    [self setDefaultValue];
+    [self addTapEndEditGRAction];
+}
+
+// 开始执行事件,比如获取网络数据
+- (void)startEvent {
+    [self.present startEvent];
+}
+
+- (void)setDefaultValue {
+    PoporDomainConfig * config = [PoporDomainConfig share];
+    PoporDomainConfigListEntity * leCurrent = config.netArray[0];
+    self.defaultUrlTF.text = leCurrent.domain;
+}
+
+- (UICollectionView *)addCV {
+    //1.初始化layout
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    //设置collectionView滚动方向
+    [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    //[layout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    //设置headerView的尺寸大小
+    //layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 20);
+    //该方法也可以设置itemSize
+    //layout.itemSize =CGSizeMake(110, 150);
+    
+    //2.初始化collectionView
+    UICollectionView * cv = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    //cv.backgroundColor = ColorTV_DefaultBG;
+    cv.layer.cornerRadius = 6;
+    
+    
+    [self.view addSubview:cv];
+    cv.backgroundColor = [UIColor whiteColor];
+    
+    //3.注册collectionViewCell
+    //注意，此处的ReuseIdentifier 必须和 cellForItemAtIndexPath 方法中 一致 均为 cellId
+    [cv registerClass:[PoporDomainConfigCC class] forCellWithReuseIdentifier:PoporDomainConfigCCKey];
+    
+    //4.设置代理
+    cv.delegate   = self.present;
+    cv.dataSource = self.present;
+    
+    [cv mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(PoporDomainConfigVCXGap);
+        make.top.mas_equalTo([self statusBarHeight] +self.navigationController.navigationBar.frame.size.height +20);
+        
+        make.right.mas_equalTo(-PoporDomainConfigVCXGap);
+        
+        PoporDomainConfig * pdConfig = [PoporDomainConfig share];
+        if (pdConfig.netArray.count <= 1) {
+            make.height.mas_equalTo(0);
+        }else{
+            make.height.mas_equalTo(PoporDomainConfigCCHeight);
+        }
+    }];
+    
+    return cv;
+}
+
+- (CGFloat)statusBarHeight {
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        return mainWindow.safeAreaInsets.top;
+    }else{
+        return 20;
+    }
+}
+
+- (void)addInfo {
     PoporDomainConfig * pdConfig = [PoporDomainConfig share];
     NSMutableArray * titleArray = [NSMutableArray new];
     for (PoporDomainConfigListEntity * le in pdConfig.netArray) {
         [titleArray addObject:le.title];
     }
-
+    
     if (!self.defaultUrlTF) {
         UITextField * tf = [[UITextField alloc] initWithFrame:CGRectZero];
         tf.textInset       = UIEdgeInsetsMake(0, 5, 0, 5);
@@ -131,7 +212,7 @@
         button;
     });
     
-    UILabel * infoL = ({
+    self.infoL = ({
         UILabel * l = [UILabel new];
         l.frame              = CGRectMake(0, 0, 0, 44);
         l.backgroundColor    = [UIColor clearColor];
@@ -162,34 +243,12 @@
         make.height.mas_equalTo(44);
     }];
     
-    [infoL mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.infoL mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(20);
         make.top.mas_equalTo(self.saveBT.mas_bottom).mas_offset(20);
         make.right.mas_equalTo(-20);
         //make.height.mas_equalTo(44);
     }];
-    
-    self.infoTV = [self addTVs];
-    [self.infoTV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(0);
-        make.top.mas_equalTo(infoL.mas_bottom).mas_offset(20);
-        make.right.mas_equalTo(0);
-        make.bottom.mas_equalTo(0);
-    }];
-
-    [self setDefaultValue];
-    [self addTapEndEditGRAction];
-}
-
-// 开始执行事件,比如获取网络数据
-- (void)startEvent {
-    [self.present startEvent];
-}
-
-- (void)setDefaultValue {
-    PoporDomainConfig * config = [PoporDomainConfig share];
-    PoporDomainConfigListEntity * leCurrent = config.netArray[0];
-    self.defaultUrlTF.text = leCurrent.domain;
 }
 
 #pragma mark - UITableView
@@ -228,50 +287,4 @@
         }];
     }
 }
-
-- (UICollectionView *)addCV {
-    //1.初始化layout
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    //设置collectionView滚动方向
-    [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-    //[layout setScrollDirection:UICollectionViewScrollDirectionVertical];
-    //设置headerView的尺寸大小
-    //layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 20);
-    //该方法也可以设置itemSize
-    //layout.itemSize =CGSizeMake(110, 150);
-    
-    //2.初始化collectionView
-    UICollectionView * cv = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
-    //cv.backgroundColor = ColorTV_DefaultBG;
-    cv.layer.cornerRadius = 6;
-    
-    
-    [self.view addSubview:cv];
-    cv.backgroundColor = [UIColor whiteColor];
-    
-    //3.注册collectionViewCell
-    //注意，此处的ReuseIdentifier 必须和 cellForItemAtIndexPath 方法中 一致 均为 cellId
-    [cv registerClass:[PoporDomainConfigCC class] forCellWithReuseIdentifier:PoporDomainConfigCCKey];
-    
-    //4.设置代理
-    cv.delegate   = self.present;
-    cv.dataSource = self.present;
-    
-    [cv mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(PoporDomainConfigVCXGap);
-        make.top.mas_equalTo(10);
-        
-        make.right.mas_equalTo(-PoporDomainConfigVCXGap);
-        
-        PoporDomainConfig * pdConfig = [PoporDomainConfig share];
-        if (pdConfig.netArray.count <= 1) {
-            make.height.mas_equalTo(0);
-        }else{
-            make.height.mas_equalTo(PoporDomainConfigCCHeight);
-        }
-    }];
-    
-    return cv;
-}
-
 @end
