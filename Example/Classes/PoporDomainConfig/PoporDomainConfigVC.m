@@ -144,7 +144,15 @@
     
     [cv mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(PoporDomainConfigVCXGap);
-        make.top.mas_equalTo([self statusBarHeight] +self.navigationController.navigationBar.frame.size.height +20);
+        if (self.navigationController.navigationBar) {
+            if (self.navigationController.navigationBar.translucent) {
+                make.top.mas_equalTo([self statusBarHeight] +self.navigationController.navigationBar.frame.size.height +20);
+            } else {
+                make.top.mas_equalTo(20);
+            }
+        } else {
+            make.top.mas_equalTo([self statusBarHeight] +self.navigationController.navigationBar.frame.size.height +20);
+        }
         
         make.right.mas_equalTo(-PoporDomainConfigVCXGap);
         
@@ -232,7 +240,13 @@
     
     [self.defaultUrlTF mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(PoporDomainConfigVCXGap);
-        make.top.mas_equalTo(self.infoCV.mas_bottom).mas_offset(20);
+        PoporDomainConfig * pdConfig = [PoporDomainConfig share];
+        if (pdConfig.netArray.count <= 1) {
+            make.top.mas_equalTo(self.infoCV.mas_bottom);
+        }else{
+            make.top.mas_equalTo(self.infoCV.mas_bottom).mas_offset(20);
+        }
+        
         make.right.mas_equalTo(-PoporDomainConfigVCXGap);
         make.height.mas_equalTo(44);
     }];

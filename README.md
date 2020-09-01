@@ -20,7 +20,11 @@ it, simply add the following line to your Podfile:
 pod 'PoporDomainConfig'
 ```
 
-1.06 更新依赖pod
+1.06 
+更新依赖pod
+
+1.08
+修改UI masonry
 
 ## Author
 
