@@ -303,6 +303,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = popor;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 7DUQZP3WD7;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -571,11 +574,12 @@
 			baseConfigurationReference = E3D6EA6B66D5794D3C6ED9F8 /* Pods-PoporDomainConfig_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7DUQZP3WD7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PoporDomainConfig/PoporDomainConfig-Prefix.pch";
 				INFOPLIST_FILE = "PoporDomainConfig/PoporDomainConfig-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyeduzj.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -586,11 +590,12 @@
 			baseConfigurationReference = 8FC1913DDA57468E84954CF9 /* Pods-PoporDomainConfig_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7DUQZP3WD7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PoporDomainConfig/PoporDomainConfig-Prefix.pch";
 				INFOPLIST_FILE = "PoporDomainConfig/PoporDomainConfig-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyeduzj.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

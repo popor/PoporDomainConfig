@@ -46,10 +46,25 @@
 }
 
 - (void)tapEndEditGRAction {
+    if (self.tapEndEditGRActionEnableBlock) {
+        if (self.tapEndEditGRActionEnableBlock()) {
+            [self tapEndEditGREvent];
+        }
+    } else {
+        [self tapEndEditGREvent];
+    }
+}
+
+- (void)tapEndEditGREvent {
     [self.view endEditing:YES];
     [self.view becomeFirstResponder];
     self.tapEndEditGR.enabled = NO;
+    
+    if (self.tapEndEditGRActionExtraBlock) {
+        self.tapEndEditGRActionExtraBlock();
+    }
 }
+
 
 #pragma mark - 键盘通知
 - (void)tapEndEditGR_keyboardWillShow:(NSNotification *)notification {
@@ -89,5 +104,24 @@
 - (UITapGestureRecognizer *)tapEndEditGR {
     return objc_getAssociatedObject(self, @"tapEndEditGR");
 }
+
+- (void)setTapEndEditGRActionExtraBlock:(BlockPVoid)tapEndEditGRActionExtraBlock {
+    objc_setAssociatedObject(self, @"tapEndEditGRActionExtraBlock", tapEndEditGRActionExtraBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (BlockPVoid)tapEndEditGRActionExtraBlock {
+    return objc_getAssociatedObject(self, @"tapEndEditGRActionExtraBlock");
+}
+
+
+
+- (void)setTapEndEditGRActionEnableBlock:(UIViewController_pTapEndEdit_BlockRBoolPVoid)tapEndEditGRActionEnableBlock {
+    objc_setAssociatedObject(self, @"tapEndEditGRActionEnableBlock", tapEndEditGRActionEnableBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (UIViewController_pTapEndEdit_BlockRBoolPVoid)tapEndEditGRActionEnableBlock {
+    return objc_getAssociatedObject(self, @"tapEndEditGRActionEnableBlock");
+}
+
 
 @end
